@@ -10,7 +10,7 @@ Read these first:
 
 ## Scope
 
-Project 1 foundation: HA DNS (Pi-hole + Keepalived VIP), recursive DNS (Unbound), monitoring/alerting (Grafana + Prometheus), Tailscale + RustDesk remote access, Proxmox-hosted core services. Stops intentionally at this foundation. Managed routing/switching, VLAN segmentation, firewall policy, and SSID-to-VLAN mapping are tracked in `home-network-managed-infrastructure-lab`, not here.
+Project 1 foundation: HA DNS (Pi-hole + Keepalived VIP), recursive DNS (Unbound), monitoring/alerting (Grafana + Prometheus), Tailscale + RustDesk remote access, Proxmox-hosted core services. Stops intentionally at this foundation. Managed routing/switching, VLAN segmentation, firewall policy, and SSID-to-VLAN mapping are tracked in `netlab`, not here.
 
 ## Directories
 
