@@ -101,9 +101,9 @@ The completed lab provides a documented home infrastructure foundation with high
 | Phase 3 | ✅ Complete | HA DNS with Keepalived, Gravity Sync, and Unbound |
 | Phase 4 | ✅ Complete | Monitoring and alerting |
 | Phase 5 | ✅ Complete | Tailscale secure remote access |
-| Phase 5.5 | Tailscale Subnet Router & Remote LAN Access | Dedicated subnet router VM advertising `192.168.68.0/24` into Tailscale |
+| Phase 5.5 | ✅ Complete | Tailscale subnet router and remote LAN access: dedicated subnet router VM advertising `192.168.68.0/24` into Tailscale |
 | Phase 6 | ✅ Complete | Proxmox, Omada Controller, and Docker monitoring migration |
-| Phase 6.5 | Remote Access, VM Hardening & Docker Visibility | RustDesk VM, hardened access, Portainer Server, and Docker visibility |
+| Phase 6.5 | ✅ Complete | Remote access, VM hardening, and Docker visibility: RustDesk VM, hardened access, Portainer Server, and Docker visibility |
 ---
 
 ## Phase Documentation 📚
@@ -227,7 +227,7 @@ This lab demonstrates practical infrastructure engineering across:
 
 Routing, switching, VLAN, and firewall policy work is out of scope for this repository and is documented separately as a network segmentation project.
 
-That follow-up project covers ER605 production routing, managed switching, Deco AP mode, VLAN segmentation, firewall policy, and network isolation.
+That follow-up project covers managed routing and switching (ER605 and Omada at first, UniFi since 2026-09-27), Deco AP mode, VLAN segmentation, firewall policy, and network isolation.
 
 ---
 
