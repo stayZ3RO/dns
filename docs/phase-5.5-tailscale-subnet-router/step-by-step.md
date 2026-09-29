@@ -9,8 +9,8 @@ A lightweight Debian VM was created in Proxmox.
 | VM name | `tailscale-router` |
 | OS | Debian minimal |
 | CPU | 1 vCPU |
-| RAM | 512 MB–1 GB |
-| Disk | 8–12 GB |
+| RAM | 512 MB-1 GB |
+| Disk | 8-12 GB |
 | Network | VirtIO on `vmbr0` |
 | IP | `192.168.68.84` |
 

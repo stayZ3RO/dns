@@ -61,7 +61,7 @@ Pi-hole continues to provide:
 
 Gravity Sync keeps both Pi-hole nodes aligned by replicating Pi-hole configuration between them.
 
-This helps ensure that:
+That keeps them consistent:
 
 - blocklists stay consistent
 - allowlists and denylists stay consistent

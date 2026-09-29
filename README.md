@@ -8,7 +8,7 @@
 ![platform](https://img.shields.io/badge/platform-Proxmox-orange)
 ![security](https://img.shields.io/badge/security-no%20public%20SSH-success)
 
-> Completed Project 1 of my home infrastructure lab: a pre-cutover foundation for HA DNS, recursive DNS, monitoring, alerting, secure remote access, Proxmox-hosted services, and operational validation.
+> I completed Project 1 of my home infrastructure lab. It is a pre-cutover foundation for HA DNS, recursive DNS, monitoring, alerting, secure remote access, Proxmox-hosted services, and operational validation.
 
 This repository intentionally stops at the **core infrastructure foundation** stage. Managed routing, managed switching, VLAN segmentation, firewall policy, and SSID-to-VLAN mapping are tracked separately in a follow-up network segmentation project.
 
@@ -87,7 +87,7 @@ The completed lab provides a documented home infrastructure foundation with high
 
 ![Home Network Infrastructure Lab Foundation](diagrams/home-network-infra-lab-foundation.png)
 
-> Note: The `192.168.68.0/24` addresses shown in this repository are private RFC1918 lab addresses used for documentation and validation.
+> The `192.168.68.0/24` addresses shown in this repository are private RFC1918 lab addresses used for documentation and validation.
 
 ---
 
@@ -178,7 +178,7 @@ The completed lab provides a documented home infrastructure foundation with high
 
 ## Project Highlights
 
-This lab demonstrates practical infrastructure engineering across:
+The lab covers practical infrastructure engineering across:
 
 - High availability DNS with Pi-hole, Keepalived, and Gravity Sync
 - Local recursive DNS resolution with Unbound
@@ -233,7 +233,7 @@ That follow-up project covers managed routing and switching (ER605 and Omada at 
 
 ## Goal 🎯
 
-Build and document a realistic infrastructure foundation that demonstrates networking, DNS, high availability, monitoring, alerting, virtualization, secure access, and operational validation.
+Build and document a realistic infrastructure foundation: networking, DNS, high availability, monitoring, alerting, virtualization, secure access, and operational validation.
 
 ---
 
