@@ -244,7 +244,7 @@ def main():
         f.write("\n## Image Issues\n\n")
         if image_issues:
             for path, reason in image_issues:
-                f.write(f"- `{rel(path)}` — {reason}\n")
+                f.write(f"- `{rel(path)}`, {reason}\n")
         else:
             f.write("- None found.\n")
 
@@ -260,14 +260,14 @@ def main():
         f.write("\n## Stale Wording Hits\n\n")
         if stale_hits:
             for path, line_no, pattern, line in stale_hits:
-                f.write(f"- `{rel(path)}:{line_no}` matched `{pattern}` — {line}\n")
+                f.write(f"- `{rel(path)}:{line_no}` matched `{pattern}`, {line}\n")
         else:
             f.write("- None found.\n")
 
         f.write("\n## Public-Safety Keyword Hits\n\n")
         if public_safety_hits:
             for path, line_no, pattern, line in public_safety_hits:
-                f.write(f"- `{rel(path)}:{line_no}` matched `{pattern}` — {line}\n")
+                f.write(f"- `{rel(path)}:{line_no}` matched `{pattern}`, {line}\n")
         else:
             f.write("- None found.\n")
 
