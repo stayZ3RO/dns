@@ -56,7 +56,7 @@ Passed ✅
 
 Both Raspberry Pi nodes were successfully scraped through Node Exporter.
 
-![Grafana up query](../../screenshots/phase-4/11-grafana-up-query.png)
+![Grafana up query](../../screenshots-redacted/phase-4/11-grafana-up-query.png)
 
 ---
 
@@ -82,7 +82,7 @@ Passed ✅
 
 The VIP and both direct DNS node endpoints were successfully probed.
 
-![Grafana probe_success query](../../screenshots/phase-4/12-grafana-probe-success-query.png)
+![Grafana probe_success query](../../screenshots-redacted/phase-4/12-grafana-probe-success-query.png)
 
 ---
 
@@ -105,9 +105,9 @@ Confirmed that both dashboards rendered correct live data:
 
 Passed ✅
 
-![Node Health dashboard](../../screenshots/phase-4/14-node-health-dashboard.png)
+![Node Health dashboard](../../screenshots-redacted/phase-4/14-node-health-dashboard.png)
 
-![DNS & Failover dashboard](../../screenshots/phase-4/15-dns-failover-dashboard.png)
+![DNS & Failover dashboard](../../screenshots-redacted/phase-4/15-dns-failover-dashboard.png)
 
 ---
 
@@ -127,7 +127,7 @@ Prometheus alert rules were loaded and displayed in Grafana under the Prometheus
 
 Passed ✅
 
-![Grafana test alert](../../screenshots/phase-4/16-grafana-test-alert.png)
+![Grafana test alert](../../screenshots-redacted/phase-4/16-grafana-test-alert.png)
 
 ---
 
@@ -151,9 +151,9 @@ Passed ✅
 
 The full pending → firing → cleared lifecycle was observed successfully.
 
-![Single node down firing](../../screenshots/phase-4/18-single-node-down-firing.png)
+![Single node down firing](../../screenshots-redacted/phase-4/18-single-node-down-firing.png)
 
-![Single node down cleared](../../screenshots/phase-4/19-single-node-down-cleared.png)
+![Single node down cleared](../../screenshots-redacted/phase-4/19-single-node-down-cleared.png)
 
 ---
 
@@ -217,13 +217,13 @@ Passed ✅
 
 Monitoring correctly reflected healthy failover without misclassifying it as a service outage.
 
-![VIP owner before failover](../../screenshots/phase-4/21-vip-owner-before-failover.png)
+![VIP owner before failover](../../screenshots-redacted/phase-4/21-vip-owner-before-failover.png)
 
-![VIP owner after failover](../../screenshots/phase-4/23-vip-owner-after-failover.png)
+![VIP owner after failover](../../screenshots-redacted/phase-4/23-vip-owner-after-failover.png)
 
-![VIP probe during failover](../../screenshots/phase-4/24-vip-probe-during-failover.png)
+![VIP probe during failover](../../screenshots-redacted/phase-4/24-vip-probe-during-failover.png)
 
-![Node DNS probes during failover](../../screenshots/phase-4/25-node-dns-probes-during-failover.png)
+![Node DNS probes during failover](../../screenshots-redacted/phase-4/25-node-dns-probes-during-failover.png)
 
 ---
 
@@ -244,11 +244,11 @@ Observed the **DNS & Failover** dashboard during the keepalived failover event.
 
 Passed ✅
 
-![Alert state during failover](../../screenshots/phase-4/26-alert-state-during-failover.png)
+![Alert state during failover](../../screenshots-redacted/phase-4/26-alert-state-during-failover.png)
 
-![DNS dashboard during failover](../../screenshots/phase-4/27-dns-dashboard-during-failover.png)
+![DNS dashboard during failover](../../screenshots-redacted/phase-4/27-dns-dashboard-during-failover.png)
 
-![Failover restored](../../screenshots/phase-4/28-failover-restored.png)
+![Failover restored](../../screenshots-redacted/phase-4/28-failover-restored.png)
 
 ---
 
@@ -268,7 +268,7 @@ Created a compressed archive of the monitoring configuration from the monitoring
 
 Passed ✅
 
-![Monitoring backup created](../../screenshots/phase-4/20-monitoring-backup-created.png)
+![Monitoring backup created](../../screenshots-redacted/phase-4/20-monitoring-backup-created.png)
 
 ---
 

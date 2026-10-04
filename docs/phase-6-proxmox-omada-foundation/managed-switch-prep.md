@@ -116,7 +116,7 @@ Grafana:  http://192.168.68.81:3000
 
 ### Switch Pending Adoption
 
-![Switch pending adoption](../../screenshots/phase-6/switch-prep/01-switch-pending-adoption.png)
+![Switch pending adoption](../../screenshots-redacted/phase-6/switch-prep/01-switch-pending-adoption.png)
 
 This screenshot shows the managed switch discovered by the Omada Controller before adoption.
 
@@ -124,7 +124,7 @@ This screenshot shows the managed switch discovered by the Omada Controller befo
 
 ### Switch Adopted in Omada
 
-![Switch adopted in Omada](../../screenshots/phase-6/switch-prep/02-switch-adopted-in-omada.png)
+![Switch adopted in Omada](../../screenshots-redacted/phase-6/switch-prep/02-switch-adopted-in-omada.png)
 
 This screenshot shows the managed switch successfully adopted into Omada.
 
@@ -140,7 +140,7 @@ This screenshot confirms the Omada Controller was reachable and managing the net
 
 ### Client Test Through Managed Switch
 
-![Client test through managed switch](../../screenshots/phase-6/switch-prep/05-client-test-through-managed-switch.png)
+![Client test through managed switch](../../screenshots-redacted/phase-6/switch-prep/05-client-test-through-managed-switch.png)
 
 This screenshot validates that a client connected through the managed switch could reach core services and DNS.
 

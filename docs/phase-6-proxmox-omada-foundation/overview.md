@@ -101,9 +101,9 @@ Adopting and validating the switch before cutover reduces risk during the live n
 
 ![Omada Controller dashboard](../../screenshots/phase-6/04-omada-controller-dashboard.jpeg)
 
-![Docker Compose monitoring stack running](../../screenshots/phase-6/08-docker-compose-monitoring-running.png)
+![Docker Compose monitoring stack running](../../screenshots-redacted/phase-6/08-docker-compose-monitoring-running.png)
 
-![Grafana running from Docker VM](../../screenshots/phase-6/09-grafana-running-from-docker-vm.png)
+![Grafana running from Docker VM](../../screenshots-redacted/phase-6/09-grafana-running-from-docker-vm.png)
 
 ---
 

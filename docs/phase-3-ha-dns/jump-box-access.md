@@ -122,11 +122,11 @@ Administrative access was considered successful after confirming:
 
 The screenshots below confirm the SSH trust workflow used during Phase 3.
 
-![Keygen for Pi sync](../../screenshots/phase-3/4-keygen-for-pi-sync.png)
+![Keygen for Pi sync](../../screenshots-redacted/phase-3/4-keygen-for-pi-sync.png)
 
-![Copy key to pi2](../../screenshots/phase-3/5-copy-key-to-pi2.png)
+![Copy key to pi2](../../screenshots-redacted/phase-3/5-copy-key-to-pi2.png)
 
-![SSH no password confirmation](../../screenshots/phase-3/6-ssh-nopassword-confirmation.png)
+![SSH no password confirmation](../../screenshots-redacted/phase-3/6-ssh-nopassword-confirmation.png)
 
 ---
 

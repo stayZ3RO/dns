@@ -64,7 +64,7 @@ The monitoring stack was deployed on a Docker host used for the lab monitoring s
 - containers could be started successfully
 - monitoring services could run on the host
 
-![Docker working inside Ubuntu WSL](../../screenshots/phase-4/00-docker-working-in-wsl.png)
+![Docker working inside Ubuntu WSL](../../screenshots-redacted/phase-4/00-docker-working-in-wsl.png)
 
 ---
 
@@ -88,9 +88,9 @@ A dedicated monitoring workspace was created.
 - the directory structure existed
 - the required files were created
 
-![Monitoring folders created](../../screenshots/phase-4/02-monitoring-folders-created.png)
+![Monitoring folders created](../../screenshots-redacted/phase-4/02-monitoring-folders-created.png)
 
-![Monitoring files created](../../screenshots/phase-4/03-monitoring-files-created.png)
+![Monitoring files created](../../screenshots-redacted/phase-4/03-monitoring-files-created.png)
 
 ---
 
@@ -118,7 +118,7 @@ The monitoring stack was defined in `docker-compose.yml`.
 - all containers started successfully with Docker Compose
 - `docker ps` showed the services running
 
-![Docker containers running](../../screenshots/phase-4/13-docker-containers-running.png)
+![Docker containers running](../../screenshots-redacted/phase-4/13-docker-containers-running.png)
 
 ---
 
@@ -142,9 +142,9 @@ Prometheus was configured to scrape both host metrics and DNS probe targets.
 - the `up` query returned healthy results for configured scrape jobs
 - the `probe_success` query returned healthy results for DNS probe targets
 
-![Grafana up query](../../screenshots/phase-4/11-grafana-up-query.png)
+![Grafana up query](../../screenshots-redacted/phase-4/11-grafana-up-query.png)
 
-![Grafana probe_success query](../../screenshots/phase-4/12-grafana-probe-success-query.png)
+![Grafana probe_success query](../../screenshots-redacted/phase-4/12-grafana-probe-success-query.png)
 
 ---
 
@@ -166,7 +166,7 @@ Blackbox Exporter was configured to perform DNS-based probes against the HA DNS 
   - `ashpi-1`
   - `ashpi-2`
 
-![Grafana probe_success query](../../screenshots/phase-4/12-grafana-probe-success-query.png)
+![Grafana probe_success query](../../screenshots-redacted/phase-4/12-grafana-probe-success-query.png)
 
 ---
 
@@ -187,9 +187,9 @@ Node Exporter was installed on `ashpi-1` to expose Linux host metrics.
 - `systemctl status node_exporter` showed the service as active
 - `curl http://localhost:9100/metrics | head` returned metrics successfully
 
-![ashpi-1 Node Exporter status](../../screenshots/phase-4/08-node-exporter-ashpi1-status.png)
+![ashpi-1 Node Exporter status](../../screenshots-redacted/phase-4/08-node-exporter-ashpi1-status.png)
 
-![ashpi-1 Node Exporter metrics](../../screenshots/phase-4/09-node-exporter-ashpi1-metrics.png)
+![ashpi-1 Node Exporter metrics](../../screenshots-redacted/phase-4/09-node-exporter-ashpi1-metrics.png)
 
 ---
 
@@ -202,7 +202,7 @@ The same Node Exporter process was repeated on `ashpi-2`.
 - `systemctl status node_exporter` showed the service as active
 - `curl http://localhost:9100/metrics | head` returned metrics successfully
 
-![ashpi-2 Node Exporter status and metrics](../../screenshots/phase-4/10-node-exporter-ashpi2-status-metrics.png)
+![ashpi-2 Node Exporter status and metrics](../../screenshots-redacted/phase-4/10-node-exporter-ashpi2-status-metrics.png)
 
 ---
 
@@ -232,13 +232,13 @@ probe_success
 - Grafana successfully returned live Prometheus data
 - both dashboards could be built from the query results
 
-![Grafana home](../../screenshots/phase-4/06-grafana-home.png)
+![Grafana home](../../screenshots-redacted/phase-4/06-grafana-home.png)
 
-![Prometheus datasource configured](../../screenshots/phase-4/07-prometheus-datasource.png)
+![Prometheus datasource configured](../../screenshots-redacted/phase-4/07-prometheus-datasource.png)
 
-![Grafana up query](../../screenshots/phase-4/11-grafana-up-query.png)
+![Grafana up query](../../screenshots-redacted/phase-4/11-grafana-up-query.png)
 
-![Grafana probe_success query](../../screenshots/phase-4/12-grafana-probe-success-query.png)
+![Grafana probe_success query](../../screenshots-redacted/phase-4/12-grafana-probe-success-query.png)
 
 ---
 
@@ -274,9 +274,9 @@ Panels included:
   - Last not null
 - time-series panels showed historical trends correctly
 
-![Node Health dashboard](../../screenshots/phase-4/14-node-health-dashboard.png)
+![Node Health dashboard](../../screenshots-redacted/phase-4/14-node-health-dashboard.png)
 
-![DNS & Failover dashboard](../../screenshots/phase-4/15-dns-failover-dashboard.png)
+![DNS & Failover dashboard](../../screenshots-redacted/phase-4/15-dns-failover-dashboard.png)
 
 ---
 
@@ -302,7 +302,7 @@ Prometheus alert rules were added for:
 - Grafana displayed the Prometheus alert rules
 - test alerts could be triggered and cleared
 
-![Grafana test alert](../../screenshots/phase-4/16-grafana-test-alert.png)
+![Grafana test alert](../../screenshots-redacted/phase-4/16-grafana-test-alert.png)
 
 ---
 
@@ -396,9 +396,9 @@ A single-node-down test was performed by stopping Node Exporter on `ashpi-2`.
 
 The alert lifecycle behaved as expected from pending → firing → cleared.
 
-![Single node down firing](../../screenshots/phase-4/18-single-node-down-firing.png)
+![Single node down firing](../../screenshots-redacted/phase-4/18-single-node-down-firing.png)
 
-![Single node down cleared](../../screenshots/phase-4/19-single-node-down-cleared.png)
+![Single node down cleared](../../screenshots-redacted/phase-4/19-single-node-down-cleared.png)
 
 ---
 
@@ -419,21 +419,21 @@ A keepalived failover test was performed to confirm monitoring reflected healthy
 
 Monitoring correctly reflected a healthy failover event without misclassifying it as a service outage.
 
-![VIP owner before failover](../../screenshots/phase-4/21-vip-owner-before-failover.png)
+![VIP owner before failover](../../screenshots-redacted/phase-4/21-vip-owner-before-failover.png)
 
-![Dashboards healthy before failover](../../screenshots/phase-4/22-dashboards-healthy-before-failover.png)
+![Dashboards healthy before failover](../../screenshots-redacted/phase-4/22-dashboards-healthy-before-failover.png)
 
-![VIP owner after failover](../../screenshots/phase-4/23-vip-owner-after-failover.png)
+![VIP owner after failover](../../screenshots-redacted/phase-4/23-vip-owner-after-failover.png)
 
-![VIP probe during failover](../../screenshots/phase-4/24-vip-probe-during-failover.png)
+![VIP probe during failover](../../screenshots-redacted/phase-4/24-vip-probe-during-failover.png)
 
-![Node DNS probes during failover](../../screenshots/phase-4/25-node-dns-probes-during-failover.png)
+![Node DNS probes during failover](../../screenshots-redacted/phase-4/25-node-dns-probes-during-failover.png)
 
-![Alert state during failover](../../screenshots/phase-4/26-alert-state-during-failover.png)
+![Alert state during failover](../../screenshots-redacted/phase-4/26-alert-state-during-failover.png)
 
-![DNS dashboard during failover](../../screenshots/phase-4/27-dns-dashboard-during-failover.png)
+![DNS dashboard during failover](../../screenshots-redacted/phase-4/27-dns-dashboard-during-failover.png)
 
-![Failover restored](../../screenshots/phase-4/28-failover-restored.png)
+![Failover restored](../../screenshots-redacted/phase-4/28-failover-restored.png)
 
 ---
 
@@ -447,7 +447,7 @@ The monitoring configuration was archived from the monitoring host.
 - dashboard JSON exports were preserved for reuse
 - webhook secrets were not included in Git
 
-![Monitoring backup created](../../screenshots/phase-4/20-monitoring-backup-created.png)
+![Monitoring backup created](../../screenshots-redacted/phase-4/20-monitoring-backup-created.png)
 
 ---
 

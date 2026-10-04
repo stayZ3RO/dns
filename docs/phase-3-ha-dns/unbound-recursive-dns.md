@@ -157,10 +157,10 @@ Useful screenshots for this document include:
 
 Example image references:
 
-![Unbound ashpi-1 status](../../screenshots/phase-3/20-unbound-active-on-pi1.png)
-![Unbound ashpi-2 status](../../screenshots/phase-3/24-pi2-unbound-active.png)
-![Unbound ashpi-1 dig test](../../screenshots/phase-3/21-dns-recursion-validation-pi1.png)
-![Unbound ashpi-2 dig test](../../screenshots/phase-3/27-pi2-dig-test-after-dns-update.png)
+![Unbound ashpi-1 status](../../screenshots-redacted/phase-3/20-unbound-active-on-pi1.png)
+![Unbound ashpi-2 status](../../screenshots-redacted/phase-3/24-pi2-unbound-active.png)
+![Unbound ashpi-1 dig test](../../screenshots-redacted/phase-3/21-dns-recursion-validation-pi1.png)
+![Unbound ashpi-2 dig test](../../screenshots-redacted/phase-3/27-pi2-dig-test-after-dns-update.png)
 
 ---
 

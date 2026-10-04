@@ -61,3 +61,6 @@ jobs:
 
       - name: Public safety check (MACs, public IPs, tailnet addresses)
         run: python3 scripts/check-public-safety.py
+
+      - name: Check relative Markdown links
+        run: python3 scripts/check-relative-links.py

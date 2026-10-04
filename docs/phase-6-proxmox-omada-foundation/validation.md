@@ -45,9 +45,9 @@ Result: ER605 was staged with the existing LAN plan and Pi-hole VIP DNS target.
 
 ## 4. Docker Monitoring VM Validation
 
-![Docker VM summary](../../screenshots/phase-6/07-docker-vm-summary.png)
+![Docker VM summary](../../screenshots-redacted/phase-6/07-docker-vm-summary.png)
 
-![Docker Compose monitoring stack running](../../screenshots/phase-6/08-docker-compose-monitoring-running.png)
+![Docker Compose monitoring stack running](../../screenshots-redacted/phase-6/08-docker-compose-monitoring-running.png)
 
 Result: Monitoring stack runs on the dedicated Docker VM.
 
@@ -55,7 +55,7 @@ Result: Monitoring stack runs on the dedicated Docker VM.
 
 ## 5. Grafana Validation
 
-![Grafana running from Docker VM](../../screenshots/phase-6/09-grafana-running-from-docker-vm.png)
+![Grafana running from Docker VM](../../screenshots-redacted/phase-6/09-grafana-running-from-docker-vm.png)
 
 Result: Grafana is reachable from the Docker VM IP.
 
@@ -63,7 +63,7 @@ Result: Grafana is reachable from the Docker VM IP.
 
 ## 6. Backup Validation
 
-![Proxmox backup to hdd-storage](../../screenshots/phase-6/10-proxmox-backup-to-hdd-storage.png)
+![Proxmox backup to hdd-storage](../../screenshots-redacted/phase-6/10-proxmox-backup-to-hdd-storage.png)
 
 Result: Proxmox backup target is working.
 
@@ -71,7 +71,7 @@ Result: Proxmox backup target is working.
 
 ## 7. Gaming PC Dependency Removed
 
-![Gaming PC Docker stopped](../../screenshots/phase-6/11-gaming-pc-docker-stopped.png)
+![Gaming PC Docker stopped](../../screenshots-redacted/phase-6/11-gaming-pc-docker-stopped.png)
 
 Result: Monitoring no longer depends on the gaming PC.
 
@@ -79,9 +79,9 @@ Result: Monitoring no longer depends on the gaming PC.
 
 ## 8. Managed Switch Pre-Staging
 
-![Switch adopted in Omada](../../screenshots/phase-6/switch-prep/02-switch-adopted-in-omada.png)
+![Switch adopted in Omada](../../screenshots-redacted/phase-6/switch-prep/02-switch-adopted-in-omada.png)
 
-![Client test through managed switch](../../screenshots/phase-6/switch-prep/05-client-test-through-managed-switch.png)
+![Client test through managed switch](../../screenshots-redacted/phase-6/switch-prep/05-client-test-through-managed-switch.png)
 
 Result: Managed switch was adopted and tested before future cutover work.
 

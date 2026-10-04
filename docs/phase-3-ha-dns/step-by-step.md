@@ -60,11 +60,11 @@ The first step was adding a second Raspberry Pi to the network so DNS would no l
 - SSH access worked correctly
 - Pi-hole dashboard was reachable after setup
 
-![Pi 2 prep](../../screenshots/phase-3/1-pi2-prep.png)
+![Pi 2 prep](../../screenshots-redacted/phase-3/1-pi2-prep.png)
 
-![Pi 2 Pi-hole dashboard error](../../screenshots/phase-3/2-pi2-pihole-dashboard-error.png)
+![Pi 2 Pi-hole dashboard error](../../screenshots-redacted/phase-3/2-pi2-pihole-dashboard-error.png)
 
-![Pi 2 dashboard domain fix](../../screenshots/phase-3/3-pi2-dashboard-domain-fix.png)
+![Pi 2 dashboard domain fix](../../screenshots-redacted/phase-3/3-pi2-dashboard-domain-fix.png)
 
 ---
 
@@ -85,11 +85,11 @@ Before Gravity Sync could replicate configuration between the nodes, SSH trust h
 - key was copied to ashpi-2
 - passwordless SSH worked successfully
 
-![Keygen for Pi sync](../../screenshots/phase-3/4-keygen-for-pi-sync.png)
+![Keygen for Pi sync](../../screenshots-redacted/phase-3/4-keygen-for-pi-sync.png)
 
-![Copy key to pi2](../../screenshots/phase-3/5-copy-key-to-pi2.png)
+![Copy key to pi2](../../screenshots-redacted/phase-3/5-copy-key-to-pi2.png)
 
-![SSH no password confirmation](../../screenshots/phase-3/6-ssh-nopassword-confirmation.png)
+![SSH no password confirmation](../../screenshots-redacted/phase-3/6-ssh-nopassword-confirmation.png)
 
 ---
 
@@ -111,11 +111,11 @@ Gravity Sync was added so both Pi-hole nodes would stay aligned.
 - push completed successfully
 - configuration comparison confirmed both nodes matched
 
-![Gravity Sync config complete](../../screenshots/phase-3/7-gravity-sync-config-complete.png)
+![Gravity Sync config complete](../../screenshots-redacted/phase-3/7-gravity-sync-config-complete.png)
 
-![Gravity Sync push confirmed](../../screenshots/phase-3/8-gravity-sync-push-confirmed.png)
+![Gravity Sync push confirmed](../../screenshots-redacted/phase-3/8-gravity-sync-push-confirmed.png)
 
-![Gravity Sync compare confirmed](../../screenshots/phase-3/9-gravity-sync-compare-confirmed.png)
+![Gravity Sync compare confirmed](../../screenshots-redacted/phase-3/9-gravity-sync-compare-confirmed.png)
 
 ---
 
@@ -139,13 +139,13 @@ keepalived was used to provide a floating Virtual IP for client DNS.
 - VIP was assigned successfully
 - VIP was active on the primary node
 
-![keepalived config primary node](../../screenshots/phase-3/10-keepalived-config-primary-node.png)
+![keepalived config primary node](../../screenshots-redacted/phase-3/10-keepalived-config-primary-node.png)
 
-![keepalived backup config](../../screenshots/phase-3/11-keepalived-backup-config.png)
+![keepalived backup config](../../screenshots-redacted/phase-3/11-keepalived-backup-config.png)
 
-![VIP assigned primary node](../../screenshots/phase-3/12-vip-assigned-primary-node.png)
+![VIP assigned primary node](../../screenshots-redacted/phase-3/12-vip-assigned-primary-node.png)
 
-![VIP active on primary node](../../screenshots/phase-3/13-vip-active-on-primary-node.png)
+![VIP active on primary node](../../screenshots-redacted/phase-3/13-vip-active-on-primary-node.png)
 
 ---
 
@@ -168,15 +168,15 @@ Failover was tested to confirm that the secondary node could take over DNS servi
 - DNS remained active after failover
 - primary node could become active again after recovery
 
-![Before failover primary active](../../screenshots/phase-3/14-before-failover-primary-active.png)
+![Before failover primary active](../../screenshots-redacted/phase-3/14-before-failover-primary-active.png)
 
-![Failover triggered](../../screenshots/phase-3/15-failover-triggered.png)
+![Failover triggered](../../screenshots-redacted/phase-3/15-failover-triggered.png)
 
-![After failover secondary active](../../screenshots/phase-3/16-after-failover-secondary-active.png)
+![After failover secondary active](../../screenshots-redacted/phase-3/16-after-failover-secondary-active.png)
 
-![DNS active after failover](../../screenshots/phase-3/17-dns-active-after-failover.png)
+![DNS active after failover](../../screenshots-redacted/phase-3/17-dns-active-after-failover.png)
 
-![Verify primary active after failover](../../screenshots/phase-3/18-verify-primary-active-after-failover.png)
+![Verify primary active after failover](../../screenshots-redacted/phase-3/18-verify-primary-active-after-failover.png)
 
 ---
 
@@ -200,17 +200,17 @@ Unbound was installed on the primary Pi-hole node to provide local recursive DNS
 - Pi-hole was updated to use local Unbound
 - DNS queries succeeded after the DNS update
 
-![Unbound active on pi1](../../screenshots/phase-3/20-unbound-active-on-pi1.png)
+![Unbound active on pi1](../../screenshots-redacted/phase-3/20-unbound-active-on-pi1.png)
 
-![DNS Unbound dig test before Pi-hole DNS update](../../screenshots/phase-3/21-dns-unbound-dig-test-before-pihole-dns-update.png)
+![DNS Unbound dig test before Pi-hole DNS update](../../screenshots-redacted/phase-3/21-dns-unbound-dig-test-before-pihole-dns-update.png)
 
-![DNS recursion validation pi1](../../screenshots/phase-3/21-dns-recursion-validation-pi1.png)
+![DNS recursion validation pi1](../../screenshots-redacted/phase-3/21-dns-recursion-validation-pi1.png)
 
-![Pi 1 Pi-hole DNS](../../screenshots/phase-3/22-pi1-pihole-dns.png)
+![Pi 1 Pi-hole DNS](../../screenshots-redacted/phase-3/22-pi1-pihole-dns.png)
 
-![Unbound validation pi1](../../screenshots/phase-3/23-unbound-validation-pi1.png)
+![Unbound validation pi1](../../screenshots-redacted/phase-3/23-unbound-validation-pi1.png)
 
-![DNS dig validation after Pi-hole DNS](../../screenshots/phase-3/23-dns-dig-validation-after-pihole-dns.png)
+![DNS dig validation after Pi-hole DNS](../../screenshots-redacted/phase-3/23-dns-dig-validation-after-pihole-dns.png)
 
 ---
 
@@ -239,9 +239,9 @@ Pi-hole on ashpi-1 was updated to use the local Unbound resolver.
 - blocked domains remained filtered
 - ashpi-1 successfully used local Unbound
 
-![Pi 1 Pi-hole DNS](../../screenshots/phase-3/22-pi1-pihole-dns.png)
+![Pi 1 Pi-hole DNS](../../screenshots-redacted/phase-3/22-pi1-pihole-dns.png)
 
-![DNS dig validation after Pi-hole DNS](../../screenshots/phase-3/23-dns-dig-validation-after-pihole-dns.png)
+![DNS dig validation after Pi-hole DNS](../../screenshots-redacted/phase-3/23-dns-dig-validation-after-pihole-dns.png)
 
 ---
 
@@ -265,13 +265,13 @@ The same Unbound configuration process was repeated on the secondary node.
 - Pi-hole DNS settings were updated on ashpi-2
 - DNS queries succeeded after the DNS update
 
-![Pi 2 Unbound active](../../screenshots/phase-3/24-pi2-unbound-active.png)
+![Pi 2 Unbound active](../../screenshots-redacted/phase-3/24-pi2-unbound-active.png)
 
-![Pi 2 DNS dig test before Pi-hole DNS update](../../screenshots/phase-3/25-pi2-dns-dig-test-before-pihole-dns-update.png)
+![Pi 2 DNS dig test before Pi-hole DNS update](../../screenshots-redacted/phase-3/25-pi2-dns-dig-test-before-pihole-dns-update.png)
 
-![Pi 2 Pi-hole DNS update](../../screenshots/phase-3/26-pi2-pihole-dns-update.png)
+![Pi 2 Pi-hole DNS update](../../screenshots-redacted/phase-3/26-pi2-pihole-dns-update.png)
 
-![Pi 2 dig test after DNS update](../../screenshots/phase-3/27-pi2-dig-test-after-dns-update.png)
+![Pi 2 dig test after DNS update](../../screenshots-redacted/phase-3/27-pi2-dig-test-after-dns-update.png)
 
 ---
 
@@ -292,9 +292,9 @@ After both nodes were updated, the configuration was checked again to confirm bo
 - both nodes used Unbound locally
 - client DNS queries continued to work
 
-![Verify config between nodes](../../screenshots/phase-3/28-verify-config-between-nodes.png)
+![Verify config between nodes](../../screenshots-redacted/phase-3/28-verify-config-between-nodes.png)
 
-![Dig test on client](../../screenshots/phase-3/29-dig-test-on-client.png)
+![Dig test on client](../../screenshots-redacted/phase-3/29-dig-test-on-client.png)
 
 ---
 
@@ -315,11 +315,11 @@ The next step was validating the end-to-end DNS path through the shared VIP.
 - blocked domains remained filtered through the VIP
 - client DNS traffic used the HA DNS path
 
-![Before failover Unbound test](../../screenshots/phase-3/30-before-failover-unbound-test.png)
+![Before failover Unbound test](../../screenshots-redacted/phase-3/30-before-failover-unbound-test.png)
 
-![Before failover Unbound test 2](../../screenshots/phase-3/31-before-failover-unbound-test-2.png)
+![Before failover Unbound test 2](../../screenshots-redacted/phase-3/31-before-failover-unbound-test-2.png)
 
-![Dig test on client](../../screenshots/phase-3/29-dig-test-on-client.png)
+![Dig test on client](../../screenshots-redacted/phase-3/29-dig-test-on-client.png)
 
 ---
 
@@ -345,13 +345,13 @@ After Unbound was configured on both nodes, failover testing was repeated.
 - ad blocking remained functional
 - no new internal single point of failure was introduced
 
-![Verify VIP failover](../../screenshots/phase-3/32-verify-vip-failover.png)
+![Verify VIP failover](../../screenshots-redacted/phase-3/32-verify-vip-failover.png)
 
-![Verify dig after failover backup node](../../screenshots/phase-3/33-verify-dig-after-failover-backup-node.png)
+![Verify dig after failover backup node](../../screenshots-redacted/phase-3/33-verify-dig-after-failover-backup-node.png)
 
-![Client DNS test after failover](../../screenshots/phase-3/34-client-dns-test-after-failover.png)
+![Client DNS test after failover](../../screenshots-redacted/phase-3/34-client-dns-test-after-failover.png)
 
-![Ad block test after failover](../../screenshots/phase-3/35-adblock-test-after-failover.png)
+![Ad block test after failover](../../screenshots-redacted/phase-3/35-adblock-test-after-failover.png)
 
 ---
 
