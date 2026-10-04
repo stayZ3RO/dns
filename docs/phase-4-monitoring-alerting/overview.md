@@ -105,9 +105,9 @@ The stack was later confirmed running with:
 - Alertmanager
 - Blackbox Exporter
 
-![Docker working inside Ubuntu WSL](../../screenshots/phase-4/00-docker-working-in-wsl.png)
+![Docker working inside Ubuntu WSL](../../screenshots-redacted/phase-4/00-docker-working-in-wsl.png)
 
-![Monitoring containers running](../../screenshots/phase-4/13-docker-containers-running.png)
+![Monitoring containers running](../../screenshots-redacted/phase-4/13-docker-containers-running.png)
 
 ---
 
@@ -156,7 +156,7 @@ It included:
 - root disk free percentage
 - uptime
 
-![Node Health dashboard](../../screenshots/phase-4/14-node-health-dashboard.png)
+![Node Health dashboard](../../screenshots-redacted/phase-4/14-node-health-dashboard.png)
 
 ### 2. DNS & Failover
 
@@ -170,7 +170,7 @@ It included:
 - per-node probe duration
 - active alerts
 
-![DNS & Failover dashboard](../../screenshots/phase-4/15-dns-failover-dashboard.png)
+![DNS & Failover dashboard](../../screenshots-redacted/phase-4/15-dns-failover-dashboard.png)
 
 ---
 
@@ -195,9 +195,9 @@ The alerting model focused on **service impact first**.
 
 This helped reduce noise and avoid treating a healthy failover as a critical outage.
 
-![Single node down alert firing](../../screenshots/phase-4/18-single-node-down-firing.png)
+![Single node down alert firing](../../screenshots-redacted/phase-4/18-single-node-down-firing.png)
 
-![Single node down alert cleared](../../screenshots/phase-4/19-single-node-down-cleared.png)
+![Single node down alert cleared](../../screenshots-redacted/phase-4/19-single-node-down-cleared.png)
 
 ---
 
@@ -248,13 +248,13 @@ Phase 4 was validated by confirming:
 - no false critical outage alert was triggered during a healthy failover
 - the monitoring configuration was backed up successfully
 
-![VIP owner before failover](../../screenshots/phase-4/21-vip-owner-before-failover.png)
+![VIP owner before failover](../../screenshots-redacted/phase-4/21-vip-owner-before-failover.png)
 
-![VIP owner after failover](../../screenshots/phase-4/23-vip-owner-after-failover.png)
+![VIP owner after failover](../../screenshots-redacted/phase-4/23-vip-owner-after-failover.png)
 
-![DNS dashboard during failover](../../screenshots/phase-4/27-dns-dashboard-during-failover.png)
+![DNS dashboard during failover](../../screenshots-redacted/phase-4/27-dns-dashboard-during-failover.png)
 
-![Monitoring backup created](../../screenshots/phase-4/20-monitoring-backup-created.png)
+![Monitoring backup created](../../screenshots-redacted/phase-4/20-monitoring-backup-created.png)
 
 ---
 

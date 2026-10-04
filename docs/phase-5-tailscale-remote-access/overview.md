@@ -75,7 +75,7 @@ The following devices were added to the tailnet:
 
 MagicDNS naming was used so the Raspberry Pi devices could be reached by clean hostnames.
 
-![All core devices visible in the tailnet](../../screenshots/phase-5/10-all-core-devices-visible-in-tailnet.png)
+![All core devices visible in the tailnet](../../screenshots-redacted/phase-5/10-all-core-devices-visible-in-tailnet.png)
 
 ---
 
@@ -105,9 +105,9 @@ The key security decisions for this phase were:
 - SSH service verified on both Pi nodes
 - Tailscale SSH enabled on both Pi nodes for future controlled access
 
-![SSH service active on ashpi-1](../../screenshots/phase-5/13-ashpi-1-ssh-service-active.png)
+![SSH service active on ashpi-1](../../screenshots-redacted/phase-5/13-ashpi-1-ssh-service-active.png)
 
-![SSH service active on ashpi-2](../../screenshots/phase-5/14-ashpi-2-ssh-service-active.png)
+![SSH service active on ashpi-2](../../screenshots-redacted/phase-5/14-ashpi-2-ssh-service-active.png)
 
 ---
 
@@ -125,9 +125,9 @@ Phase 5 was validated by confirming:
 - Tailscale SSH was enabled on both Pi nodes
 - no public SSH port forwarding was needed
 
-![ashpi-1 authenticated and visible in Tailscale status](../../screenshots/phase-5/06-ashpi-1-tailscale-authenticated-status.png)
+![ashpi-1 authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/06-ashpi-1-tailscale-authenticated-status.png)
 
-![ashpi-2 authenticated and visible in Tailscale status](../../screenshots/phase-5/09-ashpi-2-tailscale-status.png)
+![ashpi-2 authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/09-ashpi-2-tailscale-status.png)
 
 ---
 

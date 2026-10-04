@@ -134,7 +134,7 @@ time() - node_boot_time_seconds{job="node"}
 - unit set to **duration (s)**
 - neutral color used to avoid treating high uptime as a failure condition
 
-![Node Health dashboard](../../screenshots/phase-4/14-node-health-dashboard.png)
+![Node Health dashboard](../../screenshots-redacted/phase-4/14-node-health-dashboard.png)
 
 ---
 
@@ -234,7 +234,7 @@ Shows currently pending or firing alerts related to the monitoring stack and HA 
 
 - Alert list
 
-![DNS & Failover dashboard](../../screenshots/phase-4/15-dns-failover-dashboard.png)
+![DNS & Failover dashboard](../../screenshots-redacted/phase-4/15-dns-failover-dashboard.png)
 
 ---
 
@@ -247,9 +247,9 @@ Several cleanup adjustments were made after the initial build:
 - dashboard time ranges were adjusted to reduce confusion from old bad series
 - uptime styling was changed to avoid showing large uptime values as failures
 
-![Grafana up query](../../screenshots/phase-4/11-grafana-up-query.png)
+![Grafana up query](../../screenshots-redacted/phase-4/11-grafana-up-query.png)
 
-![Grafana probe_success query](../../screenshots/phase-4/12-grafana-probe-success-query.png)
+![Grafana probe_success query](../../screenshots-redacted/phase-4/12-grafana-probe-success-query.png)
 
 ---
 
@@ -275,9 +275,9 @@ Answers:
 - are any relevant alerts active?
 - did failover preserve DNS availability?
 
-![Dashboards healthy before failover](../../screenshots/phase-4/22-dashboards-healthy-before-failover.png)
+![Dashboards healthy before failover](../../screenshots-redacted/phase-4/22-dashboards-healthy-before-failover.png)
 
-![DNS dashboard during failover](../../screenshots/phase-4/27-dns-dashboard-during-failover.png)
+![DNS dashboard during failover](../../screenshots-redacted/phase-4/27-dns-dashboard-during-failover.png)
 
 ---
 

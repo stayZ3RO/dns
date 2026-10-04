@@ -55,7 +55,7 @@ Created the Docker VM for the monitoring stack.
 
 - VM IP: `192.168.68.81`
 
-![Docker VM summary](../../screenshots/phase-6/07-docker-vm-summary.png)
+![Docker VM summary](../../screenshots-redacted/phase-6/07-docker-vm-summary.png)
 
 ---
 
@@ -63,9 +63,9 @@ Created the Docker VM for the monitoring stack.
 
 Migrated Grafana, Prometheus, Alertmanager, and Blackbox Exporter from the gaming PC to the Docker VM.
 
-![Docker Compose monitoring stack running](../../screenshots/phase-6/08-docker-compose-monitoring-running.png)
+![Docker Compose monitoring stack running](../../screenshots-redacted/phase-6/08-docker-compose-monitoring-running.png)
 
-![Grafana running from Docker VM](../../screenshots/phase-6/09-grafana-running-from-docker-vm.png)
+![Grafana running from Docker VM](../../screenshots-redacted/phase-6/09-grafana-running-from-docker-vm.png)
 
 ---
 
@@ -73,7 +73,7 @@ Migrated Grafana, Prometheus, Alertmanager, and Blackbox Exporter from the gamin
 
 Stopped the old Docker Desktop monitoring stack.
 
-![Gaming PC Docker stopped](../../screenshots/phase-6/11-gaming-pc-docker-stopped.png)
+![Gaming PC Docker stopped](../../screenshots-redacted/phase-6/11-gaming-pc-docker-stopped.png)
 
 ---
 
@@ -81,7 +81,7 @@ Stopped the old Docker Desktop monitoring stack.
 
 Created Proxmox backups to `hdd-storage`.
 
-![Proxmox backup to hdd-storage](../../screenshots/phase-6/10-proxmox-backup-to-hdd-storage.png)
+![Proxmox backup to hdd-storage](../../screenshots-redacted/phase-6/10-proxmox-backup-to-hdd-storage.png)
 
 ---
 
@@ -89,9 +89,9 @@ Created Proxmox backups to `hdd-storage`.
 
 Adopted the managed switch into Omada while still on the existing flat LAN.
 
-![Switch adopted in Omada](../../screenshots/phase-6/switch-prep/02-switch-adopted-in-omada.png)
+![Switch adopted in Omada](../../screenshots-redacted/phase-6/switch-prep/02-switch-adopted-in-omada.png)
 
-![Client test through managed switch](../../screenshots/phase-6/switch-prep/05-client-test-through-managed-switch.png)
+![Client test through managed switch](../../screenshots-redacted/phase-6/switch-prep/05-client-test-through-managed-switch.png)
 
 ---
 

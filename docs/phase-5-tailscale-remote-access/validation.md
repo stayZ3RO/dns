@@ -43,9 +43,9 @@ The Tailscale admin console should prompt for the first device and then show the
 
 Passed ✅
 
-![Tailscale first device setup](../../screenshots/phase-5/01-tailscale-first-device-setup.png)
+![Tailscale first device setup](../../screenshots-redacted/phase-5/01-tailscale-first-device-setup.png)
 
-![Tailnet before devices were added](../../screenshots/phase-5/02-tailscale-machines-empty-state.png)
+![Tailnet before devices were added](../../screenshots-redacted/phase-5/02-tailscale-machines-empty-state.png)
 
 ---
 
@@ -63,7 +63,7 @@ The Windows desktop should appear in the Tailscale Machines list.
 
 Passed ✅
 
-![Windows desktop added to tailnet](../../screenshots/phase-5/03-windows-desktop-added-to-tailnet.png)
+![Windows desktop added to tailnet](../../screenshots-redacted/phase-5/03-windows-desktop-added-to-tailnet.png)
 
 ---
 
@@ -81,7 +81,7 @@ Both Windows admin devices should appear in the Machines list.
 
 Passed ✅
 
-![Second Windows admin device added to tailnet](../../screenshots/phase-5/04-second-windows-device-added-to-tailnet.png)
+![Second Windows admin device added to tailnet](../../screenshots-redacted/phase-5/04-second-windows-device-added-to-tailnet.png)
 
 ---
 
@@ -104,11 +104,11 @@ Installed and authenticated Tailscale on `ashpi-1`.
 
 Passed ✅
 
-![Tailscale installation started on ashpi-1](../../screenshots/phase-5/05-ashpi-1-tailscale-install-started.png)
+![Tailscale installation started on ashpi-1](../../screenshots-redacted/phase-5/05-ashpi-1-tailscale-install-started.png)
 
-![ashpi-1 authenticated and visible in Tailscale status](../../screenshots/phase-5/06-ashpi-1-tailscale-authenticated-status.png)
+![ashpi-1 authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/06-ashpi-1-tailscale-authenticated-status.png)
 
-![ashpi-1 visible in Tailscale admin console](../../screenshots/phase-5/07-ashpi-1-visible-in-admin-console.png)
+![ashpi-1 visible in Tailscale admin console](../../screenshots-redacted/phase-5/07-ashpi-1-visible-in-admin-console.png)
 
 ---
 
@@ -131,9 +131,9 @@ Installed and authenticated Tailscale on `ashpi-2`.
 
 Passed ✅
 
-![Tailscale installation and authentication on ashpi-2](../../screenshots/phase-5/08-ashpi-2-tailscale-install-authenticated.png)
+![Tailscale installation and authentication on ashpi-2](../../screenshots-redacted/phase-5/08-ashpi-2-tailscale-install-authenticated.png)
 
-![ashpi-2 authenticated and visible in Tailscale status](../../screenshots/phase-5/09-ashpi-2-tailscale-status.png)
+![ashpi-2 authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/09-ashpi-2-tailscale-status.png)
 
 ---
 
@@ -156,7 +156,7 @@ The admin console should show:
 
 Passed ✅
 
-![All core devices visible in the tailnet](../../screenshots/phase-5/10-all-core-devices-visible-in-tailnet.png)
+![All core devices visible in the tailnet](../../screenshots-redacted/phase-5/10-all-core-devices-visible-in-tailnet.png)
 
 ---
 
@@ -180,9 +180,9 @@ The command should complete successfully on each Pi node.
 
 Passed ✅
 
-![Tailscale SSH enabled on ashpi-1](../../screenshots/phase-5/11-ashpi-1-tailscale-ssh-enabled.png)
+![Tailscale SSH enabled on ashpi-1](../../screenshots-redacted/phase-5/11-ashpi-1-tailscale-ssh-enabled.png)
 
-![Tailscale SSH enabled on ashpi-2](../../screenshots/phase-5/12-ashpi-2-tailscale-ssh-enabled.png)
+![Tailscale SSH enabled on ashpi-2](../../screenshots-redacted/phase-5/12-ashpi-2-tailscale-ssh-enabled.png)
 
 ---
 
@@ -209,9 +209,9 @@ The SSH service should show:
 
 Passed ✅
 
-![SSH service active on ashpi-1](../../screenshots/phase-5/13-ashpi-1-ssh-service-active.png)
+![SSH service active on ashpi-1](../../screenshots-redacted/phase-5/13-ashpi-1-ssh-service-active.png)
 
-![SSH service active on ashpi-2](../../screenshots/phase-5/14-ashpi-2-ssh-service-active.png)
+![SSH service active on ashpi-2](../../screenshots-redacted/phase-5/14-ashpi-2-ssh-service-active.png)
 
 ---
 
@@ -229,7 +229,7 @@ The test showed that Ubuntu WSL on the Windows admin machine was not the authent
 
 This clarified that the correct admin path was the Windows Tailscale client rather than a separate unauthenticated WSL Tailscale context.
 
-![Tailscale ping validation from admin device](../../screenshots/phase-5/15-tailscale-ping-validation-from-admin-device.png)
+![Tailscale ping validation from admin device](../../screenshots-redacted/phase-5/15-tailscale-ping-validation-from-admin-device.png)
 
 ---
 

@@ -132,19 +132,19 @@ The detailed screenshot walkthrough is documented in the [Step-by-Step Guide](./
 
 ### Gravity Sync confirmed between nodes
 
-![Gravity Sync compare confirmed](../../screenshots/phase-3/9-gravity-sync-compare-confirmed.png)
+![Gravity Sync compare confirmed](../../screenshots-redacted/phase-3/9-gravity-sync-compare-confirmed.png)
 
 ### VIP active on the primary node
 
-![VIP active on primary node](../../screenshots/phase-3/13-vip-active-on-primary-node.png)
+![VIP active on primary node](../../screenshots-redacted/phase-3/13-vip-active-on-primary-node.png)
 
 ### VIP moved after failover
 
-![After failover secondary active](../../screenshots/phase-3/16-after-failover-secondary-active.png)
+![After failover secondary active](../../screenshots-redacted/phase-3/16-after-failover-secondary-active.png)
 
 ### Client DNS continued after failover
 
-![Client DNS test after failover](../../screenshots/phase-3/34-client-dns-test-after-failover.png)
+![Client DNS test after failover](../../screenshots-redacted/phase-3/34-client-dns-test-after-failover.png)
 
 ---
 

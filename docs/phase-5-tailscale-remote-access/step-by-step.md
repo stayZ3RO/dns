@@ -58,9 +58,9 @@ Tailscale was selected as the Phase 5 remote access platform.
 - tailnet was available for device enrollment
 - Tailscale prompted to add the first device
 
-![Tailscale first device setup](../../screenshots/phase-5/01-tailscale-first-device-setup.png)
+![Tailscale first device setup](../../screenshots-redacted/phase-5/01-tailscale-first-device-setup.png)
 
-![Tailnet before devices were added](../../screenshots/phase-5/02-tailscale-machines-empty-state.png)
+![Tailnet before devices were added](../../screenshots-redacted/phase-5/02-tailscale-machines-empty-state.png)
 
 ---
 
@@ -79,7 +79,7 @@ The Windows desktop was added to the tailnet first.
 - Windows desktop successfully joined the tailnet
 - Tailscale assigned the device a private tailnet address
 
-![Windows desktop added to tailnet](../../screenshots/phase-5/03-windows-desktop-added-to-tailnet.png)
+![Windows desktop added to tailnet](../../screenshots-redacted/phase-5/03-windows-desktop-added-to-tailnet.png)
 
 ---
 
@@ -98,7 +98,7 @@ A second Windows device was added as another admin endpoint.
 - second Windows device successfully joined the tailnet
 - both Windows admin devices appeared in the Tailscale console
 
-![Second Windows admin device added to tailnet](../../screenshots/phase-5/04-second-windows-device-added-to-tailnet.png)
+![Second Windows admin device added to tailnet](../../screenshots-redacted/phase-5/04-second-windows-device-added-to-tailnet.png)
 
 ---
 
@@ -129,11 +129,11 @@ hostname
 - `ashpi-1` appeared in `tailscale status`
 - `ashpi-1` appeared in the admin console
 
-![Tailscale installation started on ashpi-1](../../screenshots/phase-5/05-ashpi-1-tailscale-install-started.png)
+![Tailscale installation started on ashpi-1](../../screenshots-redacted/phase-5/05-ashpi-1-tailscale-install-started.png)
 
-![ashpi-1 authenticated and visible in Tailscale status](../../screenshots/phase-5/06-ashpi-1-tailscale-authenticated-status.png)
+![ashpi-1 authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/06-ashpi-1-tailscale-authenticated-status.png)
 
-![ashpi-1 visible in Tailscale admin console](../../screenshots/phase-5/07-ashpi-1-visible-in-admin-console.png)
+![ashpi-1 visible in Tailscale admin console](../../screenshots-redacted/phase-5/07-ashpi-1-visible-in-admin-console.png)
 
 ---
 
@@ -164,9 +164,9 @@ hostname
 - `ashpi-2` appeared in `tailscale status`
 - `ashpi-2` appeared in the admin console
 
-![Tailscale installation and authentication on ashpi-2](../../screenshots/phase-5/08-ashpi-2-tailscale-install-authenticated.png)
+![Tailscale installation and authentication on ashpi-2](../../screenshots-redacted/phase-5/08-ashpi-2-tailscale-install-authenticated.png)
 
-![ashpi-2 authenticated and visible in Tailscale status](../../screenshots/phase-5/09-ashpi-2-tailscale-status.png)
+![ashpi-2 authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/09-ashpi-2-tailscale-status.png)
 
 ---
 
@@ -187,7 +187,7 @@ After both Raspberry Pi nodes were added, the Tailscale admin console showed the
 - each device had a Tailscale IP address
 - both Pi nodes were online
 
-![All core devices visible in the tailnet](../../screenshots/phase-5/10-all-core-devices-visible-in-tailnet.png)
+![All core devices visible in the tailnet](../../screenshots-redacted/phase-5/10-all-core-devices-visible-in-tailnet.png)
 
 ---
 
@@ -215,9 +215,9 @@ sudo tailscale set --ssh
 - command completed successfully on `ashpi-2`
 - both nodes were prepared for SSH access through the tailnet
 
-![Tailscale SSH enabled on ashpi-1](../../screenshots/phase-5/11-ashpi-1-tailscale-ssh-enabled.png)
+![Tailscale SSH enabled on ashpi-1](../../screenshots-redacted/phase-5/11-ashpi-1-tailscale-ssh-enabled.png)
 
-![Tailscale SSH enabled on ashpi-2](../../screenshots/phase-5/12-ashpi-2-tailscale-ssh-enabled.png)
+![Tailscale SSH enabled on ashpi-2](../../screenshots-redacted/phase-5/12-ashpi-2-tailscale-ssh-enabled.png)
 
 ---
 
@@ -238,9 +238,9 @@ sudo systemctl status ssh
 - SSH service was enabled on `ashpi-2`
 - SSH service was active and running on `ashpi-2`
 
-![SSH service active on ashpi-1](../../screenshots/phase-5/13-ashpi-1-ssh-service-active.png)
+![SSH service active on ashpi-1](../../screenshots-redacted/phase-5/13-ashpi-1-ssh-service-active.png)
 
-![SSH service active on ashpi-2](../../screenshots/phase-5/14-ashpi-2-ssh-service-active.png)
+![SSH service active on ashpi-2](../../screenshots-redacted/phase-5/14-ashpi-2-ssh-service-active.png)
 
 ---
 
@@ -261,7 +261,7 @@ During testing, running `tailscale` commands from Ubuntu WSL on the Windows admi
 
 The cleaner approach was to use the Windows Tailscale client as the authenticated admin endpoint instead of trying to manage a separate WSL Tailscale identity.
 
-![Tailscale ping validation from admin device](../../screenshots/phase-5/15-tailscale-ping-validation-from-admin-device.png)
+![Tailscale ping validation from admin device](../../screenshots-redacted/phase-5/15-tailscale-ping-validation-from-admin-device.png)
 
 ---
 

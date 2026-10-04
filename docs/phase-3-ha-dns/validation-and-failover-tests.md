@@ -44,7 +44,7 @@ The following areas were tested:
 
 Gravity Sync was validated to confirm both Pi-hole nodes had matching configuration.
 
-![Gravity Sync compare confirmed](../../screenshots/phase-3/9-gravity-sync-compare-confirmed.png)
+![Gravity Sync compare confirmed](../../screenshots-redacted/phase-3/9-gravity-sync-compare-confirmed.png)
 
 ### Result
 
@@ -58,7 +58,7 @@ Gravity Sync was validated to confirm both Pi-hole nodes had matching configurat
 
 Before failover testing, the VIP was confirmed on the primary node.
 
-![VIP active on primary node](../../screenshots/phase-3/13-vip-active-on-primary-node.png)
+![VIP active on primary node](../../screenshots-redacted/phase-3/13-vip-active-on-primary-node.png)
 
 ### Result
 
@@ -72,11 +72,11 @@ Before failover testing, the VIP was confirmed on the primary node.
 
 Failover was triggered by stopping keepalived on the active node.
 
-![Failover triggered](../../screenshots/phase-3/15-failover-triggered.png)
+![Failover triggered](../../screenshots-redacted/phase-3/15-failover-triggered.png)
 
 After failover, the secondary node became active.
 
-![After failover secondary active](../../screenshots/phase-3/16-after-failover-secondary-active.png)
+![After failover secondary active](../../screenshots-redacted/phase-3/16-after-failover-secondary-active.png)
 
 ### Result
 
@@ -90,7 +90,7 @@ After failover, the secondary node became active.
 
 After the VIP moved, DNS was tested from the client side.
 
-![Client DNS test after failover](../../screenshots/phase-3/34-client-dns-test-after-failover.png)
+![Client DNS test after failover](../../screenshots-redacted/phase-3/34-client-dns-test-after-failover.png)
 
 ### Result
 
@@ -104,7 +104,7 @@ After the VIP moved, DNS was tested from the client side.
 
 A blocked domain was tested after failover to confirm Pi-hole filtering still worked.
 
-![Ad block test after failover](../../screenshots/phase-3/35-adblock-test-after-failover.png)
+![Ad block test after failover](../../screenshots-redacted/phase-3/35-adblock-test-after-failover.png)
 
 ### Result
 
@@ -118,7 +118,7 @@ A blocked domain was tested after failover to confirm Pi-hole filtering still wo
 
 After testing, the original primary node was verified again.
 
-![Verify primary active after failover](../../screenshots/phase-3/18-verify-primary-active-after-failover.png)
+![Verify primary active after failover](../../screenshots-redacted/phase-3/18-verify-primary-active-after-failover.png)
 
 ### Result
 

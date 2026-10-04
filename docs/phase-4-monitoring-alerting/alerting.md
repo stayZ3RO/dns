@@ -274,11 +274,11 @@ This confirmed:
 - the alert cleared correctly after recovery
 - Discord notification routing worked through Alertmanager
 
-![Grafana test alert](../../screenshots/phase-4/16-grafana-test-alert.png)
+![Grafana test alert](../../screenshots-redacted/phase-4/16-grafana-test-alert.png)
 
-![Single node down alert firing](../../screenshots/phase-4/18-single-node-down-firing.png)
+![Single node down alert firing](../../screenshots-redacted/phase-4/18-single-node-down-firing.png)
 
-![Single node down alert cleared](../../screenshots/phase-4/19-single-node-down-cleared.png)
+![Single node down alert cleared](../../screenshots-redacted/phase-4/19-single-node-down-cleared.png)
 
 ---
 
@@ -304,7 +304,7 @@ This confirms that the monitoring stack can distinguish between:
 
 That distinction is one of the most important outcomes of Phase 4.
 
-![Alert state during failover](../../screenshots/phase-4/26-alert-state-during-failover.png)
+![Alert state during failover](../../screenshots-redacted/phase-4/26-alert-state-during-failover.png)
 
 ---
 
@@ -314,7 +314,7 @@ The **DNS & Failover** dashboard includes an **Active Alerts** panel so currentl
 
 This gives a quick summary of alert state without leaving the dashboard view.
 
-![DNS & Failover dashboard with alerts](../../screenshots/phase-4/15-dns-failover-dashboard.png)
+![DNS & Failover dashboard with alerts](../../screenshots-redacted/phase-4/15-dns-failover-dashboard.png)
 
 ---
 

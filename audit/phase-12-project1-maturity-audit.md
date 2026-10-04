@@ -43,8 +43,8 @@
 - `docs/phase-6-proxmox-omada-foundation/step-by-step.md:74` matched `\bDocker Desktop\b`, Stopped the old Docker Desktop monitoring stack.
 - `docs/phase-6-proxmox-omada-foundation/managed-switch-prep.md:81` matched `\bpending\b`, 3. Confirmed the switch appeared as pending adoption.
 - `docs/phase-6-proxmox-omada-foundation/managed-switch-prep.md:117` matched `\bpending\b`, ### Switch Pending Adoption
-- `docs/phase-6-proxmox-omada-foundation/managed-switch-prep.md:119` matched `\bpending\b`, ![Switch pending adoption](../../screenshots/phase-6/switch-prep/01-switch-pending-adoption.png)
-- `docs/phase-6-proxmox-omada-foundation/managed-switch-prep.md:119` matched `\bpending\b`, ![Switch pending adoption](../../screenshots/phase-6/switch-prep/01-switch-pending-adoption.png)
+- `docs/phase-6-proxmox-omada-foundation/managed-switch-prep.md:119` matched `\bpending\b`, ![Switch pending adoption](../screenshots-redacted/phase-6/switch-prep/01-switch-pending-adoption.png)
+- `docs/phase-6-proxmox-omada-foundation/managed-switch-prep.md:119` matched `\bpending\b`, ![Switch pending adoption](../screenshots-redacted/phase-6/switch-prep/01-switch-pending-adoption.png)
 - `docs/phase-4-monitoring-alerting/overview.md:279` matched `\bnext phase\b`, With monitoring and alerting complete, the next phase is **secure remote access** and administrative path hardening.
 - `docs/phase-4-monitoring-alerting/overview.md:244` matched `\bpending\b`, - a single-node-down alert moved from pending → firing → cleared
 - `docs/phase-4-monitoring-alerting/dashboards.md:231` matched `\bpending\b`, Shows currently pending or firing alerts related to the monitoring stack and HA DNS service path.
@@ -152,13 +152,13 @@
 - `docs/phase-3-ha-dns/jump-box-access.md:78` matched `password`, - validating passwordless SSH access
 - `docs/phase-3-ha-dns/jump-box-access.md:79` matched `password`, - confirming that administrative commands could be run without repeated password prompts
 - `docs/phase-3-ha-dns/jump-box-access.md:115` matched `password`, - passwordless SSH worked successfully
-- `docs/phase-3-ha-dns/jump-box-access.md:129` matched `password`, ![SSH no password confirmation](../../screenshots/phase-3/6-ssh-nopassword-confirmation.png)
-- `docs/phase-3-ha-dns/jump-box-access.md:129` matched `password`, ![SSH no password confirmation](../../screenshots/phase-3/6-ssh-nopassword-confirmation.png)
+- `docs/phase-3-ha-dns/jump-box-access.md:129` matched `password`, ![SSH no password confirmation](../screenshots-redacted/phase-3/6-ssh-nopassword-confirmation.png)
+- `docs/phase-3-ha-dns/jump-box-access.md:129` matched `password`, ![SSH no password confirmation](../screenshots-redacted/phase-3/6-ssh-nopassword-confirmation.png)
 - `docs/phase-3-ha-dns/overview.md:117` matched `password`, - configured passwordless SSH between nodes
 - `docs/phase-3-ha-dns/step-by-step.md:79` matched `password`, 3. verified passwordless SSH access
 - `docs/phase-3-ha-dns/step-by-step.md:86` matched `password`, - passwordless SSH worked successfully
-- `docs/phase-3-ha-dns/step-by-step.md:92` matched `password`, ![SSH no password confirmation](../../screenshots/phase-3/6-ssh-nopassword-confirmation.png)
-- `docs/phase-3-ha-dns/step-by-step.md:92` matched `password`, ![SSH no password confirmation](../../screenshots/phase-3/6-ssh-nopassword-confirmation.png)
+- `docs/phase-3-ha-dns/step-by-step.md:92` matched `password`, ![SSH no password confirmation](../screenshots-redacted/phase-3/6-ssh-nopassword-confirmation.png)
+- `docs/phase-3-ha-dns/step-by-step.md:92` matched `password`, ![SSH no password confirmation](../screenshots-redacted/phase-3/6-ssh-nopassword-confirmation.png)
 - `docs/phase-3-ha-dns/step-by-step.md:362` matched `password`, - [x] passwordless SSH configured between nodes
 - `docs/phase-6.5-rustdesk-remote-access/screenshots-checklist.md:44` matched `token`, - Portainer usernames or tokens
 - `configs/phase-4-monitoring-alerting/README.md:17` matched `password`, - The Grafana admin password in `docker-compose.yml` has been sanitized and replaced with `CHANGE_ME`.

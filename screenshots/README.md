@@ -1,6 +1,6 @@
 # Screenshots 📸
 
-This folder contains redacted screenshots used as validation evidence for the Home Network Infrastructure Lab.
+The published validation screenshots are in [screenshots-redacted/](../screenshots-redacted/). This folder also retains seven Phase 6 JPEGs from the original project record.
 
 Screenshots are included to show that each phase was configured, tested, and verified.
 
