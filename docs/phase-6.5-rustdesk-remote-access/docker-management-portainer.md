@@ -34,8 +34,8 @@ The design separates Docker management from monitoring workloads. Portainer Serv
 |---|---:|
 | OS | Debian minimal |
 | CPU | 1 vCPU |
-| RAM | 1–2 GB |
-| Disk | 16–20 GB |
+| RAM | 1-2 GB |
+| Disk | 16-20 GB |
 | IP | `192.168.68.82` |
 | Role | Portainer Server |
 
