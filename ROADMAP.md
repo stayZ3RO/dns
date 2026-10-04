@@ -6,7 +6,7 @@
 
 This roadmap documents the completed scope of the HA DNS and core infrastructure foundation project.
 
-Future managed routing, switching, and VLAN segmentation work is intentionally moved to a separate repository.
+Managed routing and switching moved to the follow-up [netlab project](https://github.com/stayZ3RO/netlab). Its original ER605/Omada cutover was replaced by a UniFi UDM Pro and USW-24-PoE on 2026-09-27. VLAN segmentation and firewall policy remain planned.
 
 ---
 
@@ -49,17 +49,17 @@ Future managed routing, switching, and VLAN segmentation work is intentionally m
 
 ## Moved to Separate Project
 
-The following work is intentionally not tracked as active work in this repository:
+The following work was moved out of Project 1. The first three items were completed in [netlab](https://github.com/stayZ3RO/netlab); the UniFi refresh followed on 2026-09-27. Segmentation and policy items remain planned:
 
-- ER605 production router cutover
-- managed switch production cutover
-- Deco AP mode migration
+- ER605 production router cutover (historical, later replaced by UniFi)
+- managed switch production cutover (historical, later replaced by UniFi)
+- Deco AP mode migration (complete)
 - VLAN segmentation
 - inter-VLAN firewall rules
 - trusted / lab / IoT / guest network isolation
-- SSID-to-VLAN mapping with Omada EAPs
+- SSID-to-VLAN mapping (planned; wireless hardware support to be confirmed)
 
-The next repository should focus on network segmentation and policy enforcement.
+The [netlab project](https://github.com/stayZ3RO/netlab) documents the completed cutovers and the planned network segmentation and policy work.
 
 ---
 

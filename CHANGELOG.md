@@ -9,6 +9,12 @@ This changelog summarizes the major infrastructure and documentation milestones 
 
 The project is complete and closed out.
 
+## Recent Documentation Merges
+
+- 2026-09-27: updated links to renamed public repositories (#31).
+- 2026-09-28: clarified the Project 1 boundary and README wording (#32).
+- 2026-10-04: rewrote selected documentation in plain voice and removed em dashes (#33).
+
 ---
 
 ## Phase 1 - Network Control

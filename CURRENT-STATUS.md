@@ -6,7 +6,7 @@
 
 This repository is complete as Project 1: a home network infrastructure foundation focused on HA DNS, recursive DNS, monitoring, alerting, secure remote access, and Proxmox-hosted core services.
 
-Future managed routing, switching, VLAN segmentation, firewall policy, and SSID-to-VLAN mapping are being documented separately.
+This is the Project 1 closeout record. The follow-up [netlab project](https://github.com/stayZ3RO/netlab) completed the managed-router cutover and then moved the network core to a UniFi UDM Pro and USW-24-PoE on 2026-09-27. VLAN segmentation, firewall policy, and SSID-to-VLAN mapping remain planned.
 
 ---
 
@@ -32,7 +32,9 @@ Future managed routing, switching, VLAN segmentation, firewall policy, and SSID-
 
 ---
 
-## Final Service Layout
+## Project 1 Closeout Service Layout (Historical)
+
+This was the service layout at Project 1 closeout, before later network changes. It is not a current host map: Omada is retired and monitoring now runs on VM 294. See [netlab](https://github.com/stayZ3RO/netlab) for the current network core.
 
 ```text
 Proxmox Host - 192.168.68.80
@@ -77,11 +79,11 @@ HA DNS
 
 ## Separate Project Scope
 
-The following work is intentionally outside this repository:
+The following work is intentionally outside this repository. Managed routing and switching were completed later in [netlab](https://github.com/stayZ3RO/netlab); VLAN and firewall work remains planned:
 
-- ER605 live router cutover
-- managed switch production cutover
-- Deco AP mode migration
+- ER605 live router cutover (historical, later replaced by UniFi)
+- managed switch production cutover (historical, later replaced by UniFi)
+- Deco AP mode migration (complete)
 - VLAN segmentation
 - inter-VLAN firewall policy
 - trusted / lab / IoT / guest isolation
