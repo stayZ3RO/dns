@@ -31,7 +31,9 @@ It documents a resilient foundation for DNS, monitoring, alerting, secure remote
 
 ---
 
-## Final Project 1 State
+## Final Project 1 State (Historical Snapshot)
+
+This was the Project 1 layout at closeout, before the managed-router and later UniFi cutovers. It is not a current host map. Omada is retired, monitoring now runs on VM 294, and the current network core is documented in [netlab](https://github.com/stayZ3RO/netlab).
 
 ```text
 AT&T Fiber / ONT
@@ -56,21 +58,21 @@ Home LAN - 192.168.68.0/24
 
 The HA DNS and infrastructure foundation are complete.
 
-The next logical step is a managed routing, switching, and VLAN segmentation project. That work changes the network architecture enough that it should be documented in a dedicated repository.
+The next step at closeout was a managed routing, switching, and VLAN segmentation project. That work has its own [netlab repository](https://github.com/stayZ3RO/netlab). Its router and switch cutovers are complete; VLAN segmentation remains planned.
 
 ---
 
 ## Moved to Separate Project
 
-The next project will cover:
+The follow-up project records the completed ER605/Omada cutover, the 2026-09-27 UniFi UDM Pro and USW-24-PoE refresh, and planned VLAN and firewall work:
 
-- ER605 live router cutover
-- managed switch as the core switch
-- Deco AP mode migration
+- ER605 live router cutover (historical)
+- managed switch as the core switch (historical)
+- Deco AP mode migration (complete)
 - VLAN segmentation
 - inter-VLAN firewall policy
 - trusted, lab, IoT, and guest isolation
-- optional Omada EAP SSID-to-VLAN mapping
+- SSID-to-VLAN mapping (planned; wireless hardware support to be confirmed)
 
 ---
 
