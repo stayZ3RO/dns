@@ -139,10 +139,6 @@ keepalived was used to provide a floating Virtual IP for client DNS.
 - VIP was assigned successfully
 - VIP was active on the primary node
 
-![keepalived config primary node](../../screenshots-redacted/phase-3/10-keepalived-config-primary-node.png)
-
-![keepalived backup config](../../screenshots-redacted/phase-3/11-keepalived-backup-config.png)
-
 ![VIP assigned primary node](../../screenshots-redacted/phase-3/12-vip-assigned-primary-node.png)
 
 ![VIP active on primary node](../../screenshots-redacted/phase-3/13-vip-active-on-primary-node.png)
