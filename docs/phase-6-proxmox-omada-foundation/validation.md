@@ -37,7 +37,9 @@ Result: Omada Controller is running from the Proxmox LXC.
 
 ![ER605 address reservations](../../screenshots/phase-6/05-er605-address-reservations.jpeg)
 
-![ER605 LAN DHCP Pi-hole DNS](../../screenshots/phase-6/06-er605-lan-dhcp-pihole-dns.jpeg)
+(The matching LAN/DHCP settings screenshot was removed: its summary
+table row showed the gateway IP unredacted, unlike the detail fields
+below it.)
 
 Result: ER605 was staged with the existing LAN plan and Pi-hole VIP DNS target.
 
