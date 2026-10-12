@@ -45,7 +45,9 @@ Configured the ER605 for the existing LAN plan.
 
 ![ER605 address reservations](../../screenshots/phase-6/05-er605-address-reservations.jpeg)
 
-![ER605 LAN DHCP Pi-hole DNS](../../screenshots/phase-6/06-er605-lan-dhcp-pihole-dns.jpeg)
+(The matching LAN/DHCP settings screenshot was removed: its summary
+table row showed the gateway IP unredacted, unlike the detail fields
+below it. The settings are already documented in the tables above.)
 
 ---
 
