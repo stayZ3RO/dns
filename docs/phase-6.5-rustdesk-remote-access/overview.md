@@ -42,10 +42,10 @@ Before changing the network path in a future project, the lab needed:
 
 | Component | Host | IP |
 |---|---|---:|
-| Proxmox Host | `pve` | `192.168.68.80` |
-| Omada Controller | CT 180 | `192.168.68.10` |
-| Docker Monitoring | VM 281 | `192.168.68.81` |
-| RustDesk Server | VM 183 | `192.168.68.83` |
+| Proxmox Host | `hypervisor` | `192.0.2.80` |
+| Omada Controller | CT 180 | `192.0.2.10` |
+| Docker Monitoring | VM 281 | `192.0.2.81` |
+| RustDesk Server | VM 183 | `192.0.2.83` |
 
 ---
 
@@ -53,9 +53,9 @@ Before changing the network path in a future project, the lab needed:
 
 | Item | Value |
 |---|---|
-| VM Name | `rustdesk-server` |
+| VM Name | `remote-access-host` |
 | VM ID | `183` |
-| IP Address | `192.168.68.83` |
+| IP Address | `192.0.2.83` |
 | OS | Debian |
 | Runtime | Docker Compose |
 | Containers | `rustdesk-hbbs`, `rustdesk-hbbr` |
@@ -67,10 +67,10 @@ Before changing the network path in a future project, the lab needed:
 
 | Item | Value |
 |---|---|
-| Old VM Name | `docker-services` |
-| New VM Name | `docker-monitoring` |
+| Old VM Name | `container-services-host` |
+| New VM Name | `metrics-host` |
 | VM ID | `281` |
-| IP Address | `192.168.68.81` |
+| IP Address | `192.0.2.81` |
 | Disk | `50GB` |
 | Docker logs | `10MB x 3 files` |
 | Prometheus retention | `30d` / `10GB` |
@@ -82,8 +82,8 @@ Before changing the network path in a future project, the lab needed:
 
 | Host | Component |
 |---|---|
-| `docker-monitoring` | Portainer Agent |
-| Future `docker-apps` VM | Portainer Server |
+| `metrics-host` | Portainer Agent |
+| Future `container-app-host` VM | Portainer Server |
 
 This keeps monitoring focused and reserves application hosting for a separate VM.
 

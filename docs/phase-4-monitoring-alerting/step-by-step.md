@@ -131,11 +131,11 @@ Prometheus was configured to scrape both host metrics and DNS probe targets.
 - Prometheus
 - Alertmanager
 - Blackbox Exporter
-- `ashpi-1` Node Exporter, `192.168.68.60:9100`
-- `ashpi-2` Node Exporter, `192.168.68.61:9100`
-- HA DNS VIP probe, `192.168.68.20:53`
-- `ashpi-1` direct DNS probe, `192.168.68.60:53`
-- `ashpi-2` direct DNS probe, `192.168.68.61:53`
+- `dns-primary` Node Exporter, `192.0.2.60:9100`
+- `dns-secondary` Node Exporter, `192.0.2.61:9100`
+- HA DNS VIP probe, `192.0.2.20:53`
+- `dns-primary` direct DNS probe, `192.0.2.60:53`
+- `dns-secondary` direct DNS probe, `192.0.2.61:53`
 
 ### Validation
 
@@ -163,16 +163,16 @@ Blackbox Exporter was configured to perform DNS-based probes against the HA DNS 
 
 - `probe_success` returned `1` for:
   - the VIP
-  - `ashpi-1`
-  - `ashpi-2`
+  - `dns-primary`
+  - `dns-secondary`
 
 ![Grafana probe_success query](../../screenshots-redacted/phase-4/12-grafana-probe-success-query.png)
 
 ---
 
-## 6. Install Node Exporter on ashpi-1 📈
+## 6. Install Node Exporter on dns-primary 📈
 
-Node Exporter was installed on `ashpi-1` to expose Linux host metrics.
+Node Exporter was installed on `dns-primary` to expose Linux host metrics.
 
 ### Tasks completed
 
@@ -187,22 +187,22 @@ Node Exporter was installed on `ashpi-1` to expose Linux host metrics.
 - `systemctl status node_exporter` showed the service as active
 - `curl http://localhost:9100/metrics | head` returned metrics successfully
 
-![ashpi-1 Node Exporter status](../../screenshots-redacted/phase-4/08-node-exporter-ashpi1-status.png)
+[dns-primary Node Exporter status](../../screenshots-redacted/phase-4/)
 
-![ashpi-1 Node Exporter metrics](../../screenshots-redacted/phase-4/09-node-exporter-ashpi1-metrics.png)
+[dns-primary Node Exporter metrics](../../screenshots-redacted/phase-4/)
 
 ---
 
-## 7. Install Node Exporter on ashpi-2 📈
+## 7. Install Node Exporter on dns-secondary 📈
 
-The same Node Exporter process was repeated on `ashpi-2`.
+The same Node Exporter process was repeated on `dns-secondary`.
 
 ### Validation
 
 - `systemctl status node_exporter` showed the service as active
 - `curl http://localhost:9100/metrics | head` returned metrics successfully
 
-![ashpi-2 Node Exporter status and metrics](../../screenshots-redacted/phase-4/10-node-exporter-ashpi2-status-metrics.png)
+[dns-secondary Node Exporter status and metrics](../../screenshots-redacted/phase-4/)
 
 ---
 
@@ -380,11 +380,11 @@ docker compose up -d --force-recreate alertmanager
 
 ## 12. Validate Alert Lifecycle ✅
 
-A single-node-down test was performed by stopping Node Exporter on `ashpi-2`.
+A single-node-down test was performed by stopping Node Exporter on `dns-secondary`.
 
 ### Validation steps
 
-1. stopped Node Exporter on `ashpi-2`
+1. stopped Node Exporter on `dns-secondary`
 2. observed alert move to pending
 3. observed alert move to firing
 4. confirmed Discord alert delivery through Alertmanager

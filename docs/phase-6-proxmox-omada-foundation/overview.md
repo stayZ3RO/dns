@@ -46,9 +46,9 @@ Limitations:
 ## 🟢 After Phase 6
 
 ```text
-Proxmox Host - 192.168.68.80
-├── Omada Controller LXC - 192.168.68.10
-└── Docker Monitoring VM - 192.168.68.81
+Proxmox Host - 192.0.2.80
+├── Omada Controller LXC - 192.0.2.10
+└── Docker Monitoring VM - 192.0.2.81
     ├── Grafana
     ├── Prometheus
     ├── Alertmanager
@@ -63,15 +63,15 @@ The gaming PC is no longer required for always-on monitoring.
 
 | Device / Service | IP Address | Purpose |
 |---|---:|---|
-| Gateway / Future ER605 LAN | `192.168.68.1` | Default gateway |
-| Managed Switch | `192.168.68.59` temporary / `192.168.68.2` planned | Switch pre-staging and future core switch |
-| Omada Controller LXC | `192.168.68.10` | Omada software controller |
-| Pi-hole VIP | `192.168.68.20` | HA DNS endpoint |
-| ashPi-1 | `192.168.68.60` | Pi-hole / Unbound node 1 |
-| ashPi-2 | `192.168.68.61` | Pi-hole / Unbound node 2 |
-| Proxmox Host | `192.168.68.80` | Virtualization host |
-| Docker Monitoring VM | `192.168.68.81` | Monitoring stack |
-| DHCP Range | `192.168.68.100-200` | Client devices |
+| Gateway / Future ER605 LAN | `192.0.2.1` | Default gateway |
+| Managed Switch | `192.0.2.59` temporary / `192.0.2.2` planned | Switch pre-staging and future core switch |
+| Omada Controller LXC | `192.0.2.10` | Omada software controller |
+| Pi-hole VIP | `192.0.2.20` | HA DNS endpoint |
+| dns-primary | `192.0.2.60` | Pi-hole / Unbound node 1 |
+| dns-secondary | `192.0.2.61` | Pi-hole / Unbound node 2 |
+| Proxmox Host | `192.0.2.80` | Virtualization host |
+| Docker Monitoring VM | `192.0.2.81` | Monitoring stack |
+| DHCP Range | `192.0.2.100-200` | Client devices |
 
 ---
 
@@ -99,7 +99,7 @@ Adopting and validating the switch before cutover reduces risk during the live n
 
 ![Proxmox node summary](../../screenshots/phase-6/03-proxmox-node-summary.jpeg)
 
-![Omada Controller dashboard](../../screenshots/phase-6/04-omada-controller-dashboard.jpeg)
+[Omada Controller dashboard](../../screenshots/phase-6/)
 
 ![Docker Compose monitoring stack running](../../screenshots-redacted/phase-6/08-docker-compose-monitoring-running.png)
 

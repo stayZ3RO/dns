@@ -4,7 +4,7 @@
 
 Installed Proxmox on the Dell OptiPlex and assigned it the management IP:
 
-- `192.168.68.80`
+- `192.0.2.80`
 
 Validation:
 
@@ -24,12 +24,12 @@ Validated active VM/LXC storage and backup storage.
 
 Created an LXC container for Omada Controller.
 
-- Controller IP: `192.168.68.10`
-- URL: `https://192.168.68.10:8043`
+- Controller IP: `192.0.2.10`
+- URL: `https://192.0.2.10:8043`
 
 ![Omada LXC package installation](../../screenshots/phase-6/01-omada-lxc-package-install.jpeg)
 
-![Omada Controller dashboard](../../screenshots/phase-6/04-omada-controller-dashboard.jpeg)
+[Omada Controller dashboard](../../screenshots/phase-6/)
 
 ---
 
@@ -39,9 +39,9 @@ Configured the ER605 for the existing LAN plan.
 
 | Setting | Value |
 |---|---|
-| LAN IP | `192.168.68.1` |
-| DHCP Range | `192.168.68.100-192.168.68.200` |
-| Primary DNS | `192.168.68.20` |
+| LAN IP | `192.0.2.1` |
+| DHCP Range | `192.0.2.100-192.0.2.200` |
+| Primary DNS | `192.0.2.20` |
 
 ![ER605 address reservations](../../screenshots/phase-6/05-er605-address-reservations.jpeg)
 
@@ -55,7 +55,7 @@ below it. The settings are already documented in the tables above.)
 
 Created the Docker VM for the monitoring stack.
 
-- VM IP: `192.168.68.81`
+- VM IP: `192.0.2.81`
 
 ![Docker VM summary](../../screenshots-redacted/phase-6/07-docker-vm-summary.png)
 

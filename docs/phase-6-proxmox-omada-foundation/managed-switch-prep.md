@@ -32,14 +32,14 @@ During pre-staging, the switch received a temporary DHCP address from the curren
 
 | State | IP Address | Notes |
 |---|---:|---|
-| Temporary Staging IP | `192.168.68.59` | Assigned during pre-cutover testing |
-| Planned Final Management IP | `192.168.68.2` | To be assigned/reserved after ER605 cutover |
-| Omada Controller | `192.168.68.10` | Controller used to adopt/manage the switch |
+| Temporary Staging IP | `192.0.2.59` | Assigned during pre-cutover testing |
+| Planned Final Management IP | `192.0.2.2` | To be assigned/reserved after ER605 cutover |
+| Omada Controller | `192.0.2.10` | Controller used to adopt/manage the switch |
 | VLAN State | Default LAN / VLAN 1 only | No VLAN segmentation yet |
 
-The switch could not be reserved as `192.168.68.2` from the Deco DHCP interface during staging, so the temporary DHCP address was kept for Phase 6 validation.
+The switch could not be reserved as `192.0.2.2` from the Deco DHCP interface during staging, so the temporary DHCP address was kept for Phase 6 validation.
 
-The target management IP for the switch was documented as `192.168.68.2` for the later managed network cutover.
+The target management IP for the switch was documented as `192.0.2.2` for the later managed network cutover.
 
 ---
 
@@ -47,10 +47,10 @@ The target management IP for the switch was documented as `192.168.68.2` for the
 
 | Item | Planned Value |
 |---|---:|
-| Managed Switch IP | `192.168.68.2` |
-| Gateway | `192.168.68.1` |
-| DNS | `192.168.68.20` |
-| Controller | `192.168.68.10` |
+| Managed Switch IP | `192.0.2.2` |
+| Gateway | `192.0.2.1` |
+| DNS | `192.0.2.20` |
+| Controller | `192.0.2.10` |
 | VLAN State | Flat LAN during Project 1; VLANs deferred to separate managed network project |
 
 ---
@@ -61,8 +61,8 @@ The target management IP for the switch was documented as `192.168.68.2` for the
 |---:|---|
 | 1 | Uplink to ER605 LAN |
 | 2 | Proxmox Host |
-| 3 | ashpi-1 |
-| 4 | ashpi-2 |
+| 3 | dns-primary |
+| 4 | dns-secondary |
 | 5 | Main Deco AP |
 | 6 | Gaming PC |
 | 7 | Optional unmanaged switch |
@@ -77,7 +77,7 @@ During the later managed network cutover, Port 1 is intended to become the uplin
 ## Steps Completed
 
 1. Connected the managed switch to the current working LAN.
-2. Opened the Omada Controller at `https://192.168.68.10:8043`.
+2. Opened the Omada Controller at `https://192.0.2.10:8043`.
 3. Confirmed the switch appeared as pending adoption.
 4. Adopted the switch into Omada.
 5. Kept the switch on the default LAN / VLAN 1.
@@ -93,21 +93,21 @@ Validation was performed from a client connected through the managed switch.
 
 ```powershell
 ipconfig /all
-ping 192.168.68.1
-ping 192.168.68.10
-ping 192.168.68.20
-ping 192.168.68.59
-ping 192.168.68.80
-ping 192.168.68.81
-nslookup google.com 192.168.68.20
+ping 192.0.2.1
+ping 192.0.2.10
+ping 192.0.2.20
+ping 192.0.2.59
+ping 192.0.2.80
+ping 192.0.2.81
+nslookup google.com 192.0.2.20
 ```
 
 Browser validation:
 
 ```text
-Omada:    https://192.168.68.10:8043
-Proxmox:  https://192.168.68.80:8006
-Grafana:  http://192.168.68.81:3000
+Omada:    https://192.0.2.10:8043
+Proxmox:  https://192.0.2.80:8006
+Grafana:  http://192.0.2.81:3000
 ```
 
 ---
@@ -132,7 +132,7 @@ This screenshot shows the managed switch successfully adopted into Omada.
 
 ### Omada Controller Dashboard
 
-![Omada Controller dashboard](../../screenshots/phase-6/switch-prep/04-omada-controller-dashboard.jpeg)
+[Omada Controller dashboard](../../screenshots/phase-6/switch-prep/)
 
 This screenshot confirms the Omada Controller was reachable and managing the network environment during switch staging.
 
@@ -152,7 +152,7 @@ The managed switch was successfully pre-staged.
 
 The switch was adopted into Omada, validated on the existing flat LAN, and confirmed ready for the later managed network cutover.
 
-The final switch management IP of `192.168.68.2` will be assigned after the ER605 becomes the active router/DHCP server.
+The final switch management IP of `192.0.2.2` will be assigned after the ER605 becomes the active router/DHCP server.
 
 ---
 

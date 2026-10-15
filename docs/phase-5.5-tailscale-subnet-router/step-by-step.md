@@ -6,13 +6,13 @@ A lightweight Debian VM was created in Proxmox.
 
 | Setting | Value |
 |---|---:|
-| VM name | `tailscale-router` |
+| VM name | `subnet-router` |
 | OS | Debian minimal |
 | CPU | 1 vCPU |
 | RAM | 512 MB-1 GB |
 | Disk | 8-12 GB |
 | Network | VirtIO on `vmbr0` |
-| IP | `192.168.68.84` |
+| IP | `192.0.2.84` |
 
 The VM was built without a desktop environment.
 
@@ -22,7 +22,7 @@ The VM uses DHCP with a reserved LAN address.
 
 | Device | IP Address | Assignment Method |
 |---|---:|---|
-| `tailscale-router` | `192.168.68.84` | DHCP reservation using Proxmox virtual NIC MAC |
+| `subnet-router` | `192.0.2.84` | DHCP reservation using Proxmox virtual NIC MAC |
 
 The VM remains configured for DHCP inside Debian. The reserved address is assigned by the gateway using the virtual NIC MAC address from Proxmox.
 
@@ -72,8 +72,8 @@ The LAN subnet was advertised into Tailscale:
 
 ~~~bash
 sudo tailscale up \
-  --hostname=tailscale-router \
-  --advertise-routes=192.168.68.0/24 \
+  --hostname=subnet-router \
+  --advertise-routes=192.0.2.0/24 \
   --accept-dns=false
 ~~~
 
@@ -89,10 +89,10 @@ LAN_IF=$(ip route | awk '/default/ {print $5; exit}')
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 
-sudo ufw allow from 192.168.68.0/24 to any port 22 proto tcp
+sudo ufw allow from 192.0.2.0/24 to any port 22 proto tcp
 sudo ufw allow in on tailscale0 to any port 22 proto tcp
 
-sudo ufw route allow in on tailscale0 out on "$LAN_IF" to 192.168.68.0/24
+sudo ufw route allow in on tailscale0 out on "$LAN_IF" to 192.0.2.0/24
 
 sudo ufw enable
 sudo ufw status verbose

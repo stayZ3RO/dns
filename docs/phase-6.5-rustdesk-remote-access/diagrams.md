@@ -19,13 +19,13 @@
 ## Final Pre-Cutover Service Layout
 
 ```text
-Proxmox Host - 192.168.68.80
-├── CT 180: omada-controller - 192.168.68.10
-├── VM 183: rustdesk-server - 192.168.68.83
+Proxmox Host - 192.0.2.80
+├── CT 180: network-controller - 192.0.2.10
+├── VM 183: remote-access-host - 192.0.2.83
 │   ├── rustdesk-hbbs
 │   ├── rustdesk-hbbr
 │   └── UFW LAN-only firewall
-└── VM 281: docker-monitoring - 192.168.68.81
+└── VM 281: metrics-host - 192.0.2.81
     ├── Grafana
     ├── Prometheus
     ├── Alertmanager
@@ -42,7 +42,7 @@ Laptop / Gaming PC / Phone
         ↓
 RustDesk Client
         ↓
-rustdesk-server - 192.168.68.83
+remote-access-host - 192.0.2.83
         ├── hbbs
         └── hbbr
 ```
@@ -52,10 +52,10 @@ rustdesk-server - 192.168.68.83
 ## Docker Management Plan
 
 ```text
-Future docker-apps VM - 192.168.68.82
+Future container-app-host VM - 192.0.2.82
 └── Portainer Server
     ↓
-docker-monitoring VM - 192.168.68.81
+metrics-host VM - 192.0.2.81
 └── Portainer Agent - 9001
 ```
 

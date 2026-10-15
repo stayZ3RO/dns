@@ -18,23 +18,25 @@ Screenshot folder:
 screenshots/phase-6.5/docker-management-portainer/
 ~~~
 
-| File | Description |
+Role labels replace filenames that contain machine identifiers. Existing images are unchanged.
+
+| File or evidence label | Description |
 |---|---|
-| `01-proxmox-docker-mgmt-vm-summary.png` | docker-mgmt VM summary |
-| `02-proxmox-docker-mgmt-network-mac-address.png` | Proxmox virtual NIC MAC source |
-| `03-docker-mgmt-dhcp-lease-validation.png` | docker-mgmt reserved IP validation |
-| `04-docker-mgmt-network-validation.png` | Gateway, DNS, and internet validation |
+| 01 proxmox container admin host vm summary screenshot | container-admin-host VM summary |
+| 02 proxmox container admin host network mac address screenshot | Proxmox virtual NIC MAC source |
+| 03 container admin host dhcp lease validation screenshot | container-admin-host reserved IP validation |
+| 04 container admin host network validation screenshot | Gateway, DNS, and internet validation |
 | `05-docker-installed-validation.png` | Docker and Docker Compose validation |
 | `06-portainer-server-running.png` | Portainer Server container running |
 | `07-portainer-initial-login.png` | Portainer UI available |
-| `08-docker-mgmt-ufw-status.png` | docker-mgmt firewall status |
-| `09-portainer-agent-docker-monitoring-running.png` | Agent running on docker-monitoring |
-| `10-docker-monitoring-agent-firewall-rule.png` | Agent firewall rule |
-| `11-portainer-docker-monitoring-environment-online.png` | docker-monitoring online in Portainer |
+| 08 container admin host ufw status screenshot | container-admin-host firewall status |
+| 09 portainer agent metrics host running screenshot | Agent running on metrics-host |
+| 10 metrics host agent firewall rule screenshot | Agent firewall rule |
+| 11 portainer metrics host environment online screenshot | metrics-host online in Portainer |
 | `12-portainer-monitoring-containers-visible.png` | Monitoring containers visible |
 | `13-portainer-access-over-lan.png` | Portainer reachable over LAN |
 | `14-portainer-access-over-tailscale-subnet-route.png` | Portainer reachable remotely over Tailscale |
-| `15-proxmox-backup-docker-mgmt.png` | docker-mgmt backup completed |
+| 15 proxmox backup container admin host screenshot | container-admin-host backup completed |
 
 ## Before Publishing
 

@@ -19,15 +19,15 @@ RustDesk server components were deployed in a dedicated Debian VM and kept LAN-o
 
 Phase 6.5 originally focused on self-hosted RustDesk remote access and VM hardening.
 
-During final Project 1 cleanup, this phase was expanded to include Docker visibility using a dedicated `docker-mgmt` VM running Portainer Server and a Portainer Agent on the existing `docker-monitoring` VM.
+During final Project 1 cleanup, this phase was expanded to include Docker visibility using a dedicated `container-admin-host` VM running Portainer Server and a Portainer Agent on the existing `metrics-host` VM.
 
 This keeps responsibilities separated:
 
 | VM | Responsibility |
 |---|---|
-| `rustdesk-server` | RustDesk only |
-| `docker-mgmt` | Portainer Server only |
-| `docker-monitoring` | Monitoring stack + Portainer Agent |
+| `remote-access-host` | RustDesk only |
+| `container-admin-host` | Portainer Server only |
+| `metrics-host` | Monitoring stack + Portainer Agent |
 
 ---
 
@@ -51,7 +51,7 @@ This keeps responsibilities separated:
 ```text
 Proxmox Host
   ↓
-RustDesk Server VM - 192.168.68.83
+RustDesk Server VM - 192.0.2.83
   ├── rustdesk-hbbs
   └── rustdesk-hbbr
 

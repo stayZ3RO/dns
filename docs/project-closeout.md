@@ -42,14 +42,14 @@ AT&T Gateway with IP Passthrough
   ↓
 Deco Mesh Router
   ↓
-Home LAN - 192.168.68.0/24
-  ├── HA DNS VIP - 192.168.68.20
-  ├── ashpi-1 - 192.168.68.60
-  ├── ashpi-2 - 192.168.68.61
-  ├── Proxmox Host - 192.168.68.80
-  ├── Docker Monitoring VM - 192.168.68.81
-  ├── RustDesk Server VM - 192.168.68.83
-  └── Omada Controller LXC - 192.168.68.10
+Home LAN - 192.0.2.0/24
+  ├── HA DNS VIP - 192.0.2.20
+  ├── dns-primary - 192.0.2.60
+  ├── dns-secondary - 192.0.2.61
+  ├── Proxmox Host - 192.0.2.80
+  ├── Docker Monitoring VM - 192.0.2.81
+  ├── RustDesk Server VM - 192.0.2.83
+  └── Omada Controller LXC - 192.0.2.10
 ```
 
 ---

@@ -4,13 +4,13 @@ This historical plan was first recorded on 2026-04-06, before Phase 3 added HA D
 
 ## Primary DNS
 
-192.168.68.10 (Pi-hole)
+192.0.2.10 (Pi-hole)
 
 ---
 
 ## Future HA DNS
 
-192.168.68.20 (Virtual IP)
+192.0.2.20 (Virtual IP)
 
 ---
 

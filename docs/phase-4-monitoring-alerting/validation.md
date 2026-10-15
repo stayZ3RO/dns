@@ -47,8 +47,8 @@ Healthy values should be returned for:
 - Prometheus
 - Alertmanager
 - Blackbox Exporter
-- `192.168.68.60:9100`
-- `192.168.68.61:9100`
+- `192.0.2.60:9100`
+- `192.0.2.61:9100`
 
 ### Result
 
@@ -72,9 +72,9 @@ probe_success
 
 Healthy values should be returned for:
 
-- `192.168.68.20:53`
-- `192.168.68.60:53`
-- `192.168.68.61:53`
+- `192.0.2.20:53`
+- `192.0.2.60:53`
+- `192.0.2.61:53`
 
 ### Result
 
@@ -135,7 +135,7 @@ Passed ✅
 
 ### Test action
 
-Stopped Node Exporter on `ashpi-2`.
+Stopped Node Exporter on `dns-secondary`.
 
 ### Expected result
 

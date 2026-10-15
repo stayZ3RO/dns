@@ -29,7 +29,7 @@
 | RustDesk client settings configured | Passed |
 | RustDesk remote access tested | Passed |
 | RustDesk VM backed up | Passed |
-| Docker VM renamed to `docker-monitoring` | Passed |
+| Docker VM renamed to `metrics-host` | Passed |
 | Ubuntu hostname renamed | Passed |
 | Monitoring stack validated | Passed |
 | Docker log rotation configured | Passed |
@@ -66,9 +66,9 @@
 
 ## Docker Monitoring Maintenance Validation
 
-![Proxmox VM renamed docker-monitoring](../../screenshots-redacted/phase-6.5/01-proxmox-vm-renamed-docker-monitoring.png)
+[Proxmox VM renamed metrics-host](../../screenshots-redacted/phase-6.5/)
 
-![Ubuntu hostname renamed docker-monitoring](../../screenshots-redacted/phase-6.5/02-ubuntu-hostname-renamed-docker-monitoring.png)
+[Ubuntu hostname renamed metrics-host](../../screenshots-redacted/phase-6.5/)
 
 ![Monitoring stack before maintenance](../../screenshots-redacted/phase-6.5/03-monitoring-stack-before-maintenance.png)
 

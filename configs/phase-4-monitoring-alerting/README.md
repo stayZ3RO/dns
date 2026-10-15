@@ -21,6 +21,6 @@ Grafana dashboard exports and dashboard provisioning files are not included in t
 
 ## Monitored endpoints
 
-- `ashpi-1`, `192.168.68.60`
-- `ashpi-2`, `192.168.68.61`
-- HA DNS VIP, `192.168.68.20`
+- `dns-primary`, `192.0.2.60`
+- `dns-secondary`, `192.0.2.61`
+- HA DNS VIP, `192.0.2.20`

@@ -79,8 +79,8 @@ Alertmanager was used to:
 Blackbox Exporter was used to probe:
 
 - the HA DNS VIP
-- `ashpi-1` direct DNS
-- `ashpi-2` direct DNS
+- `dns-primary` direct DNS
+- `dns-secondary` direct DNS
 
 ### Node Exporter
 
@@ -115,11 +115,11 @@ The stack was later confirmed running with:
 
 The following targets were monitored during this phase:
 
-- `ashpi-1` node metrics, `192.168.68.60:9100`
-- `ashpi-2` node metrics, `192.168.68.61:9100`
-- HA DNS VIP probe, `192.168.68.20:53`
-- `ashpi-1` direct DNS probe, `192.168.68.60:53`
-- `ashpi-2` direct DNS probe, `192.168.68.61:53`
+- `dns-primary` node metrics, `192.0.2.60:9100`
+- `dns-secondary` node metrics, `192.0.2.61:9100`
+- HA DNS VIP probe, `192.0.2.20:53`
+- `dns-primary` direct DNS probe, `192.0.2.60:53`
+- `dns-secondary` direct DNS probe, `192.0.2.61:53`
 
 ---
 

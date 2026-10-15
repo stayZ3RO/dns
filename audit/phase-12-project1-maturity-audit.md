@@ -50,7 +50,7 @@
 - `docs/phase-4-monitoring-alerting/dashboards.md:231` matched `\bpending\b`, Shows currently pending or firing alerts related to the monitoring stack and HA DNS service path.
 - `docs/phase-4-monitoring-alerting/step-by-step.md:388` matched `\bpending\b`, 2. observed alert move to pending
 - `docs/phase-4-monitoring-alerting/step-by-step.md:397` matched `\bpending\b`, The alert lifecycle behaved as expected from pending → firing → cleared.
-- `docs/phase-4-monitoring-alerting/alerting.md:267` matched `\bpending\b`, A full pending → firing → cleared test was performed by stopping and restoring Node Exporter on `ashpi-2`.
+- `docs/phase-4-monitoring-alerting/alerting.md:267` matched `\bpending\b`, A full pending → firing → cleared test was performed by stopping and restoring Node Exporter on `dns-secondary`.
 - `docs/phase-4-monitoring-alerting/alerting.md:313` matched `\bpending\b`, The **DNS & Failover** dashboard includes an **Active Alerts** panel so currently pending or firing alerts can be seen directly from the operational dashboard.
 - `docs/phase-4-monitoring-alerting/README.md:29` matched `\bpending\b`, | Validation | Pending, firing, recovery, and failover behavior |
 - `docs/phase-4-monitoring-alerting/validation.md:144` matched `\bpending\b`, 1. enter pending

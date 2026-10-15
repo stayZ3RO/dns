@@ -2,22 +2,22 @@
 
 ## Network Range
 
-192.168.68.0/24
+192.0.2.0/24
 
 ---
 
 ## Core Infrastructure
 
-Router (Deco): 192.168.68.1
-Primary Pi-hole: 192.168.68.10
-Secondary Pi-hole: 192.168.68.11
-Virtual IP (VIP): 192.168.68.20
+Router (Deco): 192.0.2.1
+Primary Pi-hole: 192.0.2.10
+Secondary Pi-hole: 192.0.2.11
+Virtual IP (VIP): 192.0.2.20
 
 ---
 
 ## DHCP Range
 
-192.168.68.100 to 192.168.68.200
+192.0.2.100 to 192.0.2.200
 
 ---
 

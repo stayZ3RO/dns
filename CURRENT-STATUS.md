@@ -37,15 +37,15 @@ This is the Project 1 closeout record. The follow-up [netlab project](https://gi
 This was the service layout at Project 1 closeout, before later network changes. It is not a current host map: Omada is retired and monitoring now runs on VM 294. See [netlab](https://github.com/stayZ3RO/netlab) for the current network core.
 
 ```text
-Proxmox Host - 192.168.68.80
-├── Omada Controller LXC - 192.168.68.10
-├── Docker Monitoring VM - 192.168.68.81
-└── RustDesk Server VM - 192.168.68.83
+Proxmox Host - 192.0.2.80
+├── Omada Controller LXC - 192.0.2.10
+├── Docker Monitoring VM - 192.0.2.81
+└── RustDesk Server VM - 192.0.2.83
 
 HA DNS
-├── VIP - 192.168.68.20
-├── ashpi-1 - 192.168.68.60
-└── ashpi-2 - 192.168.68.61
+├── VIP - 192.0.2.20
+├── dns-primary - 192.0.2.60
+└── dns-secondary - 192.0.2.61
 ```
 
 ---

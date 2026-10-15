@@ -264,7 +264,7 @@ The alert set was validated by deliberately triggering and restoring conditions.
 
 ### SingleNodeDown lifecycle test
 
-A full pending → firing → cleared test was performed by stopping and restoring Node Exporter on `ashpi-2`.
+A full pending → firing → cleared test was performed by stopping and restoring Node Exporter on `dns-secondary`.
 
 This confirmed:
 

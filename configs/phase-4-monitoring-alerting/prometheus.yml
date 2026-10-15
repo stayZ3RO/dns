@@ -26,8 +26,8 @@ scrape_configs:
   - job_name: node
     static_configs:
       - targets:
-          - "192.168.68.60:9100"
-          - "192.168.68.61:9100"
+          - "192.0.2.60:9100"
+          - "192.0.2.61:9100"
 
   - job_name: dns_vip
     metrics_path: /probe
@@ -35,7 +35,7 @@ scrape_configs:
       module: [dns_vip_udp]
     static_configs:
       - targets:
-          - "192.168.68.20:53"
+          - "192.0.2.20:53"
     relabel_configs:
       - source_labels: [__address__]
         target_label: __param_target
@@ -50,8 +50,8 @@ scrape_configs:
       module: [dns_vip_udp]
     static_configs:
       - targets:
-          - "192.168.68.60:53"
-          - "192.168.68.61:53"
+          - "192.0.2.60:53"
+          - "192.0.2.61:53"
     relabel_configs:
       - source_labels: [__address__]
         target_label: __param_target
