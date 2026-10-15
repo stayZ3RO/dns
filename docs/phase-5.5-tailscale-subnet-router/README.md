@@ -21,7 +21,7 @@ Instead of installing Tailscale directly on every internal service, a lightweigh
 | VM design | Lightweight Debian utility VM |
 | Firewalling | UFW rules for SSH and routed traffic |
 | Validation | Remote access to Pi-hole, Proxmox, Grafana, Omada, and RustDesk |
-| Documentation | Screenshots, validation checks, and Project 2 notes |
+| Documentation | Screenshot checklist, validation checks, and Project 2 notes |
 
 ## Final Design
 
@@ -80,13 +80,13 @@ Home LAN
 
 ## Screenshot Evidence
 
-Screenshots for this phase are stored in:
+The intended screenshot location is not present in this repository:
 
 ~~~text
 screenshots/phase-5.5-tailscale-subnet-router/
 ~~~
 
-Key validation screenshots include:
+The files below are checklist entries, not tracked screenshot evidence. See the linked implementation and validation documents for the written phase record.
 
 | Screenshot | Purpose |
 |---|---|

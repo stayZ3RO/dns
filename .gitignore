@@ -1,0 +1,9 @@
+# Environment files and private keys
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+*.p12
+*.pfx

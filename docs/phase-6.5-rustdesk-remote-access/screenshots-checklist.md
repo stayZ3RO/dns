@@ -36,11 +36,6 @@ screenshots/phase-6.5/docker-management-portainer/
 | `14-portainer-access-over-tailscale-subnet-route.png` | Portainer reachable remotely over Tailscale |
 | `15-proxmox-backup-docker-mgmt.png` | docker-mgmt backup completed |
 
-## Blur Before Publishing
+## Before Publishing
 
-Blur:
-
-- MAC addresses
-- Portainer usernames or tokens
-- Personal device names
-- Any public IPs or auth URLs
+Follow the [public safety checklist](../public-safety-checklist.md) for redaction rules.

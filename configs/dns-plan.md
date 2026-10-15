@@ -1,4 +1,6 @@
-# DNS Configuration Plan
+# DNS Configuration Plan: Phase 2 Baseline (2026-04-06)
+
+This historical plan was first recorded on 2026-04-06, before Phase 3 added HA DNS and Unbound. See [CURRENT-STATUS.md](../CURRENT-STATUS.md) for the Project 1 closeout state.
 
 ## Primary DNS
 

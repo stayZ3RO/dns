@@ -9,8 +9,9 @@ This folder contains sanitized configuration files used for Phase 4 monitoring a
 - `alert.rules.yml`
 - `alertmanager.yml`
 - `blackbox.yml`
-- Grafana datasource provisioning
-- exported Grafana dashboards
+- Grafana datasource provisioning in `grafana/provisioning/datasources/prometheus.yml`
+
+Grafana dashboard exports and dashboard provisioning files are not included in this repository.
 
 ## Notes
 

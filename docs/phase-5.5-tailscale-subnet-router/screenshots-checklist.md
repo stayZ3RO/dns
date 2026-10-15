@@ -29,13 +29,6 @@ screenshots/phase-5.5-tailscale-subnet-router/
 | `17-proxmox-start-at-boot-enabled.png` | Start at boot enabled |
 | `18-proxmox-backup-tailscale-router.png` | Proxmox backup completed |
 
-## Blur Before Publishing
+## Before Publishing
 
-Blur:
-
-- Tailscale account email
-- Tailscale auth URLs
-- Public IPs
-- MAC addresses
-- RustDesk IDs
-- Personal device names if needed
+Follow the [public safety checklist](../public-safety-checklist.md) for redaction rules.
