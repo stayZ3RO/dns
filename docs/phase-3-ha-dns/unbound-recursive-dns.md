@@ -41,8 +41,8 @@ The purpose of adding Unbound was to:
 
 Unbound was installed on:
 
-- ashpi-1
-- ashpi-2
+- dns-primary
+- dns-secondary
 
 Each Pi-hole instance was configured to use its **own local Unbound resolver**.
 
@@ -106,13 +106,13 @@ The following work was completed on both Pi-hole nodes:
 
 Unbound was validated in multiple ways.
 
-### Direct local recursion test on ashpi-1
+### Direct local recursion test on dns-primary
 
 ```bash
 dig google.com @127.0.0.1 -p 5335
 ```
 
-### Direct local recursion test on ashpi-2
+### Direct local recursion test on dns-secondary
 
 ```bash
 dig google.com @127.0.0.1 -p 5335
@@ -146,21 +146,21 @@ These checks confirmed:
 
 Useful screenshots for this document include:
 
-- Unbound service status on ashpi-1
-- Unbound service status on ashpi-2
-- direct `dig` recursion test on ashpi-1
-- direct `dig` recursion test on ashpi-2
-- Pi-hole DNS upstream set to `127.0.0.1#5335` on ashpi-1
-- Pi-hole DNS upstream set to `127.0.0.1#5335` on ashpi-2
+- Unbound service status on dns-primary
+- Unbound service status on dns-secondary
+- direct `dig` recursion test on dns-primary
+- direct `dig` recursion test on dns-secondary
+- Pi-hole DNS upstream set to `127.0.0.1#5335` on dns-primary
+- Pi-hole DNS upstream set to `127.0.0.1#5335` on dns-secondary
 - successful DNS resolution through the VIP
 - successful recursion after failover
 
 Example image references:
 
-![Unbound ashpi-1 status](../../screenshots-redacted/phase-3/20-unbound-active-on-pi1.png)
-![Unbound ashpi-2 status](../../screenshots-redacted/phase-3/24-pi2-unbound-active.png)
-![Unbound ashpi-1 dig test](../../screenshots-redacted/phase-3/21-dns-recursion-validation-pi1.png)
-![Unbound ashpi-2 dig test](../../screenshots-redacted/phase-3/27-pi2-dig-test-after-dns-update.png)
+![Unbound dns-primary status](../../screenshots-redacted/phase-3/20-unbound-active-on-pi1.png)
+![Unbound dns-secondary status](../../screenshots-redacted/phase-3/24-pi2-unbound-active.png)
+![Unbound dns-primary dig test](../../screenshots-redacted/phase-3/21-dns-recursion-validation-pi1.png)
+![Unbound dns-secondary dig test](../../screenshots-redacted/phase-3/27-pi2-dig-test-after-dns-update.png)
 
 ---
 

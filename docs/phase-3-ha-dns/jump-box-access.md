@@ -42,8 +42,8 @@ The jump box and SSH trust workflow provides:
 
 In this project, the access workflow supports administration of:
 
-- ashpi-1
-- ashpi-2
+- dns-primary
+- dns-secondary
 - Gravity Sync replication
 - keepalived validation
 - Unbound validation
@@ -63,8 +63,8 @@ SSH Access
 Primary Admin Node / Jump Path
   ↓
 Internal Pi-hole Nodes
-  ├── ashpi-1
-  └── ashpi-2
+  ├── dns-primary
+  └── dns-secondary
 ```
 
 ---
@@ -111,7 +111,7 @@ A typical workflow looks like this:
 Administrative access was considered successful after confirming:
 
 - SSH key generation completed
-- SSH key was copied to ashpi-2
+- SSH key was copied to dns-secondary
 - passwordless SSH worked successfully
 - Gravity Sync could communicate between nodes
 - administrative commands could be run successfully

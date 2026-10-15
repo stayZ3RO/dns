@@ -33,9 +33,9 @@ The result was a more resilient DNS layer that allowed clients to continue using
 ```text
 Clients
   ↓
-HA DNS VIP - 192.168.68.20
+HA DNS VIP - 192.0.2.20
   ↓
-ashpi-1 / ashpi-2
+dns-primary / dns-secondary
   ↓
 Pi-hole + Unbound
 ```

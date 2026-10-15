@@ -57,7 +57,7 @@ Admin Device
   ↓
 Tailscale Tailnet
   ↓
-ashpi-1 / ashpi-2
+dns-primary / dns-secondary
 ```
 
 This created a private remote path that did not require exposing SSH directly to the public internet.
@@ -70,8 +70,8 @@ The following devices were added to the tailnet:
 
 - Windows desktop / gaming PC
 - Windows laptop / admin device
-- `ashpi-1`
-- `ashpi-2`
+- `dns-primary`
+- `dns-secondary`
 
 MagicDNS naming was used so the Raspberry Pi devices could be reached by clean hostnames.
 
@@ -105,9 +105,9 @@ The key security decisions for this phase were:
 - SSH service verified on both Pi nodes
 - Tailscale SSH enabled on both Pi nodes for future controlled access
 
-![SSH service active on ashpi-1](../../screenshots-redacted/phase-5/13-ashpi-1-ssh-service-active.png)
+[SSH service active on dns-primary](../../screenshots-redacted/phase-5/)
 
-![SSH service active on ashpi-2](../../screenshots-redacted/phase-5/14-ashpi-2-ssh-service-active.png)
+[SSH service active on dns-secondary](../../screenshots-redacted/phase-5/)
 
 ---
 
@@ -117,17 +117,17 @@ Phase 5 was validated by confirming:
 
 - the Windows desktop joined the tailnet successfully
 - the second Windows admin device joined the tailnet successfully
-- `ashpi-1` joined the tailnet successfully
-- `ashpi-2` joined the tailnet successfully
+- `dns-primary` joined the tailnet successfully
+- `dns-secondary` joined the tailnet successfully
 - both Pi nodes appeared in `tailscale status`
 - both Pi nodes appeared in the Tailscale admin console
 - SSH was active and running on both Pi nodes
 - Tailscale SSH was enabled on both Pi nodes
 - no public SSH port forwarding was needed
 
-![ashpi-1 authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/06-ashpi-1-tailscale-authenticated-status.png)
+[dns-primary authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/)
 
-![ashpi-2 authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/09-ashpi-2-tailscale-status.png)
+[dns-secondary authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/)
 
 ---
 

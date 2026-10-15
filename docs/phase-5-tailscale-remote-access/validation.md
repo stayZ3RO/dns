@@ -85,15 +85,15 @@ Passed ✅
 
 ---
 
-## Validation 4: ashpi-1 Tailnet Enrollment 📡
+## Validation 4: dns-primary Tailnet Enrollment 📡
 
 ### Validation performed
 
-Installed and authenticated Tailscale on `ashpi-1`.
+Installed and authenticated Tailscale on `dns-primary`.
 
 ### Expected result
 
-`ashpi-1` should:
+`dns-primary` should:
 
 - receive a Tailscale IP address
 - appear in `tailscale status`
@@ -104,23 +104,23 @@ Installed and authenticated Tailscale on `ashpi-1`.
 
 Passed ✅
 
-![Tailscale installation started on ashpi-1](../../screenshots-redacted/phase-5/05-ashpi-1-tailscale-install-started.png)
+[Tailscale installation started on dns-primary](../../screenshots-redacted/phase-5/)
 
-![ashpi-1 authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/06-ashpi-1-tailscale-authenticated-status.png)
+[dns-primary authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/)
 
-![ashpi-1 visible in Tailscale admin console](../../screenshots-redacted/phase-5/07-ashpi-1-visible-in-admin-console.png)
+[dns-primary visible in Tailscale admin console](../../screenshots-redacted/phase-5/)
 
 ---
 
-## Validation 5: ashpi-2 Tailnet Enrollment 📡
+## Validation 5: dns-secondary Tailnet Enrollment 📡
 
 ### Validation performed
 
-Installed and authenticated Tailscale on `ashpi-2`.
+Installed and authenticated Tailscale on `dns-secondary`.
 
 ### Expected result
 
-`ashpi-2` should:
+`dns-secondary` should:
 
 - receive a Tailscale IP address
 - appear in `tailscale status`
@@ -131,9 +131,9 @@ Installed and authenticated Tailscale on `ashpi-2`.
 
 Passed ✅
 
-![Tailscale installation and authentication on ashpi-2](../../screenshots-redacted/phase-5/08-ashpi-2-tailscale-install-authenticated.png)
+[Tailscale installation and authentication on dns-secondary](../../screenshots-redacted/phase-5/)
 
-![ashpi-2 authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/09-ashpi-2-tailscale-status.png)
+[dns-secondary authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/)
 
 ---
 
@@ -149,8 +149,8 @@ The admin console should show:
 
 - Windows desktop
 - second Windows admin device
-- `ashpi-1`
-- `ashpi-2`
+- `dns-primary`
+- `dns-secondary`
 
 ### Result
 
@@ -180,9 +180,9 @@ The command should complete successfully on each Pi node.
 
 Passed ✅
 
-![Tailscale SSH enabled on ashpi-1](../../screenshots-redacted/phase-5/11-ashpi-1-tailscale-ssh-enabled.png)
+[Tailscale SSH enabled on dns-primary](../../screenshots-redacted/phase-5/)
 
-![Tailscale SSH enabled on ashpi-2](../../screenshots-redacted/phase-5/12-ashpi-2-tailscale-ssh-enabled.png)
+[Tailscale SSH enabled on dns-secondary](../../screenshots-redacted/phase-5/)
 
 ---
 
@@ -209,9 +209,9 @@ The SSH service should show:
 
 Passed ✅
 
-![SSH service active on ashpi-1](../../screenshots-redacted/phase-5/13-ashpi-1-ssh-service-active.png)
+[SSH service active on dns-primary](../../screenshots-redacted/phase-5/)
 
-![SSH service active on ashpi-2](../../screenshots-redacted/phase-5/14-ashpi-2-ssh-service-active.png)
+[SSH service active on dns-secondary](../../screenshots-redacted/phase-5/)
 
 ---
 

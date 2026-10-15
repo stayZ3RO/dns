@@ -87,7 +87,7 @@ The completed lab provides a documented home infrastructure foundation with high
 
 ![Home Network Infrastructure Lab Foundation](diagrams/home-network-infra-lab-foundation.png)
 
-> The `192.168.68.0/24` addresses shown in this repository are private RFC1918 lab addresses used for documentation and validation.
+> Lab addresses in tracked text use the RFC 5737 documentation range `192.0.2.0/24`, and machine names use generic roles. These examples preserve the relationships in the recorded layout and are not live connection details. Existing images are unchanged and need a separate visual review.
 
 ---
 
@@ -101,7 +101,7 @@ The completed lab provides a documented home infrastructure foundation with high
 | Phase 3 | ✅ Complete | HA DNS with Keepalived, Gravity Sync, and Unbound |
 | Phase 4 | ✅ Complete | Monitoring and alerting |
 | Phase 5 | ✅ Complete | Tailscale secure remote access |
-| Phase 5.5 | ✅ Complete | Tailscale subnet router and remote LAN access: dedicated subnet router VM advertising `192.168.68.0/24` into Tailscale |
+| Phase 5.5 | ✅ Complete | Tailscale subnet router and remote LAN access: dedicated subnet router VM advertising `192.0.2.0/24` into Tailscale |
 | Phase 6 | ✅ Complete | Proxmox, Omada Controller, and Docker monitoring migration |
 | Phase 6.5 | ✅ Complete | Remote access, VM hardening, and Docker visibility: RustDesk VM, hardened access, Portainer Server, and Docker visibility |
 ---

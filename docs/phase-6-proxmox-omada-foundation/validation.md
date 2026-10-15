@@ -4,10 +4,10 @@
 
 | Validation Item | Expected Result | Status |
 |---|---|---|
-| Proxmox host online | Host reachable at `192.168.68.80` | Passed |
-| Omada Controller online | Controller reachable at `192.168.68.10:8043` | Passed |
+| Proxmox host online | Host reachable at `192.0.2.80` | Passed |
+| Omada Controller online | Controller reachable at `192.0.2.10:8043` | Passed |
 | ER605 preconfigured | LAN/DHCP/DNS staged before cutover | Passed |
-| Docker monitoring VM running | VM online at `192.168.68.81` | Passed |
+| Docker monitoring VM running | VM online at `192.0.2.81` | Passed |
 | Monitoring stack migrated | Grafana/Prometheus stack runs from VM | Passed |
 | Grafana reachable | UI reachable from Docker VM IP | Passed |
 | Gaming PC no longer required | Old Docker stack stopped | Passed |
@@ -27,7 +27,7 @@ Result: Proxmox host is online and hosting lab services.
 
 ## 2. Omada Controller Validation
 
-![Omada Controller dashboard](../../screenshots/phase-6/04-omada-controller-dashboard.jpeg)
+[Omada Controller dashboard](../../screenshots/phase-6/)
 
 Result: Omada Controller is running from the Proxmox LXC.
 

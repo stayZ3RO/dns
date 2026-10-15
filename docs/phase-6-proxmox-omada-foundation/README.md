@@ -32,9 +32,9 @@ The monitoring stack was moved away from the gaming PC and into a Proxmox-hosted
 ## Service Layout
 
 ```text
-Proxmox Host - 192.168.68.80
-├── Omada Controller LXC - 192.168.68.10
-└── Docker Monitoring VM - 192.168.68.81
+Proxmox Host - 192.0.2.80
+├── Omada Controller LXC - 192.0.2.10
+└── Docker Monitoring VM - 192.0.2.81
     ├── Grafana
     ├── Prometheus
     ├── Alertmanager
@@ -49,15 +49,15 @@ Proxmox Host - 192.168.68.80
 
 | Device / Service | IP Address | Purpose |
 |---|---:|---|
-| Gateway / existing LAN | `192.168.68.1` | Default gateway at this project stage |
-| Omada Controller LXC | `192.168.68.10` | Omada software controller |
-| Pi-hole VIP | `192.168.68.20` | HA DNS endpoint |
-| ashpi-1 | `192.168.68.60` | Pi-hole / Unbound node 1 |
-| ashpi-2 | `192.168.68.61` | Pi-hole / Unbound node 2 |
-| Proxmox Host | `192.168.68.80` | Virtualization host |
-| Docker Monitoring VM | `192.168.68.81` | Monitoring stack |
-| RustDesk VM | `192.168.68.83` | Remote access VM added in Phase 6.5 |
-| DHCP Range | `192.168.68.100-200` | Client devices |
+| Gateway / existing LAN | `192.0.2.1` | Default gateway at this project stage |
+| Omada Controller LXC | `192.0.2.10` | Omada software controller |
+| Pi-hole VIP | `192.0.2.20` | HA DNS endpoint |
+| dns-primary | `192.0.2.60` | Pi-hole / Unbound node 1 |
+| dns-secondary | `192.0.2.61` | Pi-hole / Unbound node 2 |
+| Proxmox Host | `192.0.2.80` | Virtualization host |
+| Docker Monitoring VM | `192.0.2.81` | Monitoring stack |
+| RustDesk VM | `192.0.2.83` | Remote access VM added in Phase 6.5 |
+| DHCP Range | `192.0.2.100-200` | Client devices |
 
 ---
 

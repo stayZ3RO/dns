@@ -16,7 +16,7 @@ Instead of installing Tailscale directly on every internal service, a lightweigh
 | Area | Implementation |
 |---|---|
 | Remote access | Tailscale subnet routing |
-| Routing | `192.168.68.0/24` advertised into the tailnet |
+| Routing | `192.0.2.0/24` advertised into the tailnet |
 | Security | No public port forwarding |
 | VM design | Lightweight Debian utility VM |
 | Firewalling | UFW rules for SSH and routed traffic |
@@ -27,12 +27,12 @@ Instead of installing Tailscale directly on every internal service, a lightweigh
 
 | Device / Service | IP Address | Purpose |
 |---|---:|---|
-| `tailscale-router` | `192.168.68.84` | Advertises LAN subnet into Tailscale |
-| Pi-hole VIP | `192.168.68.20` | HA DNS entry point |
-| Proxmox | `192.168.68.80` | Virtualization host |
-| `docker-monitoring` | `192.168.68.81` | Grafana / Prometheus stack |
-| RustDesk VM | `192.168.68.83` | Self-hosted remote access server |
-| Omada Controller | `192.168.68.10` | Network controller |
+| `subnet-router` | `192.0.2.84` | Advertises LAN subnet into Tailscale |
+| Pi-hole VIP | `192.0.2.20` | HA DNS entry point |
+| Proxmox | `192.0.2.80` | Virtualization host |
+| `metrics-host` | `192.0.2.81` | Grafana / Prometheus stack |
+| RustDesk VM | `192.0.2.83` | Self-hosted remote access server |
+| Omada Controller | `192.0.2.10` | Network controller |
 
 ## Architecture
 
@@ -44,18 +44,18 @@ MacBook / Phone / Laptop
      Tailscale
         |
         v
-tailscale-router VM
-192.168.68.84
+subnet-router VM
+192.0.2.84
         |
         v
 Home LAN
-192.168.68.0/24
+192.0.2.0/24
         |
-        +--> Pi-hole VIP      192.168.68.20
-        +--> Proxmox          192.168.68.80
-        +--> Grafana          192.168.68.81:3000
-        +--> Omada Controller 192.168.68.10
-        +--> RustDesk VM      192.168.68.83
+        +--> Pi-hole VIP      192.0.2.20
+        +--> Proxmox          192.0.2.80
+        +--> Grafana          192.0.2.81:3000
+        +--> Omada Controller 192.0.2.10
+        +--> RustDesk VM      192.0.2.83
 ~~~
 
 ## Key Design Decisions
@@ -65,7 +65,7 @@ Home LAN
 - Debian uses DHCP with a reserved LAN address.
 - The gateway reservation UI is not included in this Project 1 documentation because that belongs to the later managed-router cutover state.
 - Project 1 documents the Proxmox virtual NIC MAC source and Debian DHCP lease validation instead.
-- Only the flat LAN subnet `192.168.68.0/24` is advertised.
+- Only the flat LAN subnet `192.0.2.0/24` is advertised.
 - VLAN-aware remote access will be handled later in Project 2.
 
 ## Documentation
@@ -94,7 +94,7 @@ The files below are checklist entries, not tracked screenshot evidence. See the 
 | `06-ip-forwarding-enabled.png` | Confirms Linux routing is enabled |
 | `07-tailscale-route-advertised-cli.png` | Confirms subnet advertisement |
 | `08-tailscale-admin-route-approved.png` | Confirms Tailscale route approval |
-| `09-ufw-status-tailscale-router.png` | Confirms firewall posture |
+| 09 ufw status subnet router screenshot | Confirms firewall posture |
 | `12-remote-pihole-vip-over-tailscale.png` | Confirms remote Pi-hole access |
 | `13-remote-proxmox-ui-over-lan-ip.png` | Confirms remote Proxmox access |
 | `14-remote-grafana-ui-over-lan-ip.png` | Confirms remote Grafana access |

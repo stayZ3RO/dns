@@ -15,20 +15,20 @@ The design separates Docker management from monitoring workloads. Portainer Serv
 
 | VM | IP Address | Role |
 |---|---:|---|
-| `docker-mgmt` | `192.168.68.82` | Portainer Server only |
-| `docker-monitoring` | `192.168.68.81` | Prometheus, Grafana, Alertmanager, Blackbox, Portainer Agent |
-| `rustdesk-server` | `192.168.68.83` | RustDesk only |
+| `container-admin-host` | `192.0.2.82` | Portainer Server only |
+| `metrics-host` | `192.0.2.81` | Prometheus, Grafana, Alertmanager, Blackbox, Portainer Agent |
+| `remote-access-host` | `192.0.2.83` | RustDesk only |
 
 ## Design Rules
 
-- Portainer Server runs only on `docker-mgmt`.
-- Monitoring containers stay on `docker-monitoring`.
+- Portainer Server runs only on `container-admin-host`.
+- Monitoring containers stay on `metrics-host`.
 - Portainer Agent runs on Docker hosts that should be managed remotely.
 - RustDesk remains isolated on its own VM.
 - No public port forwarding is used.
 - Portainer is accessed over LAN or through Tailscale subnet routing.
 
-## docker-mgmt VM
+## container-admin-host VM
 
 | Setting | Value |
 |---|---:|
@@ -36,7 +36,7 @@ The design separates Docker management from monitoring workloads. Portainer Serv
 | CPU | 1 vCPU |
 | RAM | 1-2 GB |
 | Disk | 16-20 GB |
-| IP | `192.168.68.82` |
+| IP | `192.0.2.82` |
 | Role | Portainer Server |
 
 ## Portainer Server
@@ -62,10 +62,10 @@ volumes:
 Access URL:
 
 ~~~text
-https://192.168.68.82:9443
+https://192.0.2.82:9443
 ~~~
 
-## docker-monitoring Agent
+## metrics-host Agent
 
 The monitoring VM runs the existing monitoring stack and a Portainer Agent.
 
@@ -86,26 +86,26 @@ services:
 Agent address used in Portainer:
 
 ~~~text
-192.168.68.81:9001
+192.0.2.81:9001
 ~~~
 
 ## Firewall Notes
 
 The Portainer Agent should only be reachable from the Portainer Server VM.
 
-Example rule on `docker-monitoring`:
+Example rule on `metrics-host`:
 
 ~~~bash
-sudo ufw allow from 192.168.68.82 to any port 9001 proto tcp
+sudo ufw allow from 192.0.2.82 to any port 9001 proto tcp
 ~~~
 
 ## Validation
 
 Validated:
 
-- Portainer Server running on `docker-mgmt`
-- Portainer Agent running on `docker-monitoring`
-- `docker-monitoring` added as an environment in Portainer
+- Portainer Server running on `container-admin-host`
+- Portainer Agent running on `metrics-host`
+- `metrics-host` added as an environment in Portainer
 - Monitoring containers visible from Portainer
 - Portainer reachable over LAN
 - Portainer reachable remotely through Tailscale subnet routing

@@ -18,7 +18,7 @@ The lab already had secure remote access through Tailscale. However, accessing i
 The subnet router solves this by advertising the home LAN subnet into Tailscale:
 
 ~~~text
-192.168.68.0/24
+192.0.2.0/24
 ~~~
 
 Trusted Tailscale clients can now reach internal services such as Pi-hole, Proxmox, Grafana, Omada, and RustDesk without exposing those services publicly.
@@ -27,7 +27,7 @@ Trusted Tailscale clients can now reach internal services such as Pi-hole, Proxm
 
 | VM | IP Address | Role |
 |---|---:|---|
-| `tailscale-router` | `192.168.68.84` | Advertises `192.168.68.0/24` into Tailscale |
+| `subnet-router` | `192.0.2.84` | Advertises `192.0.2.0/24` into Tailscale |
 
 ## Scope
 
@@ -55,11 +55,11 @@ Not included:
 
 | Service | Address |
 |---|---|
-| Pi-hole VIP | `http://192.168.68.20/admin` |
-| Proxmox | `https://192.168.68.80:8006` |
-| Grafana | `http://192.168.68.81:3000` |
-| Omada Controller | `https://192.168.68.10` |
-| RustDesk Server | `192.168.68.83` |
+| Pi-hole VIP | `http://192.0.2.20/admin` |
+| Proxmox | `https://192.0.2.80:8006` |
+| Grafana | `http://192.0.2.81:3000` |
+| Omada Controller | `https://192.0.2.10` |
+| RustDesk Server | `192.0.2.83` |
 
 ## Outcome
 

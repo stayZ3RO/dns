@@ -1,9 +1,9 @@
 # Project 2 Notes: VLAN-Aware Remote Access
 
-The current `tailscale-router` advertises only the flat LAN subnet:
+The current `subnet-router` advertises only the flat LAN subnet:
 
 ~~~text
-192.168.68.0/24
+192.0.2.0/24
 ~~~
 
 This is correct for Project 1.

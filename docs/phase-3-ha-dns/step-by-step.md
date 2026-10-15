@@ -82,7 +82,7 @@ Before Gravity Sync could replicate configuration between the nodes, SSH trust h
 ### Validation
 
 - SSH key was generated
-- key was copied to ashpi-2
+- key was copied to dns-secondary
 - passwordless SSH worked successfully
 
 ![Keygen for Pi sync](../../screenshots-redacted/phase-3/4-keygen-for-pi-sync.png)
@@ -160,7 +160,7 @@ Failover was tested to confirm that the secondary node could take over DNS servi
 
 ### Validation
 
-- VIP transferred successfully to ashpi-2
+- VIP transferred successfully to dns-secondary
 - DNS remained active after failover
 - primary node could become active again after recovery
 
@@ -176,7 +176,7 @@ Failover was tested to confirm that the secondary node could take over DNS servi
 
 ---
 
-## 6. Install and Validate Unbound on ashpi-1 🌐
+## 6. Install and Validate Unbound on dns-primary 🌐
 
 Unbound was installed on the primary Pi-hole node to provide local recursive DNS resolution.
 
@@ -210,9 +210,9 @@ Unbound was installed on the primary Pi-hole node to provide local recursive DNS
 
 ---
 
-## 7. Point ashpi-1 Pi-hole to Local Unbound 🔗
+## 7. Point dns-primary Pi-hole to Local Unbound 🔗
 
-Pi-hole on ashpi-1 was updated to use the local Unbound resolver.
+Pi-hole on dns-primary was updated to use the local Unbound resolver.
 
 ### Upstream DNS configured
 
@@ -222,7 +222,7 @@ Pi-hole on ashpi-1 was updated to use the local Unbound resolver.
 
 ### Tasks completed
 
-1. opened the Pi-hole admin interface on ashpi-1
+1. opened the Pi-hole admin interface on dns-primary
 2. navigated to **Settings → DNS**
 3. disabled public upstream resolvers as needed
 4. added `127.0.0.1#5335` as the custom upstream resolver
@@ -233,7 +233,7 @@ Pi-hole on ashpi-1 was updated to use the local Unbound resolver.
 
 - normal domains resolved correctly
 - blocked domains remained filtered
-- ashpi-1 successfully used local Unbound
+- dns-primary successfully used local Unbound
 
 ![Pi 1 Pi-hole DNS](../../screenshots-redacted/phase-3/22-pi1-pihole-dns.png)
 
@@ -241,7 +241,7 @@ Pi-hole on ashpi-1 was updated to use the local Unbound resolver.
 
 ---
 
-## 8. Install and Validate Unbound on ashpi-2 🌐
+## 8. Install and Validate Unbound on dns-secondary 🌐
 
 The same Unbound configuration process was repeated on the secondary node.
 
@@ -256,9 +256,9 @@ The same Unbound configuration process was repeated on the secondary node.
 
 ### Validation
 
-- Unbound service was running on ashpi-2
+- Unbound service was running on dns-secondary
 - direct recursive DNS queries succeeded
-- Pi-hole DNS settings were updated on ashpi-2
+- Pi-hole DNS settings were updated on dns-secondary
 - DNS queries succeeded after the DNS update
 
 ![Pi 2 Unbound active](../../screenshots-redacted/phase-3/24-pi2-unbound-active.png)
@@ -326,7 +326,7 @@ After Unbound was configured on both nodes, failover testing was repeated.
 ### Tasks completed
 
 1. forced failover again
-2. confirmed the VIP moved to ashpi-2
+2. confirmed the VIP moved to dns-secondary
 3. queried DNS through the VIP
 4. confirmed recursive DNS still succeeded
 5. confirmed client DNS still worked
@@ -359,8 +359,8 @@ After Unbound was configured on both nodes, failover testing was repeated.
 - [x] Gravity Sync functioning
 - [x] keepalived configured
 - [x] VIP failover validated
-- [x] Unbound installed on ashpi-1
-- [x] Unbound installed on ashpi-2
+- [x] Unbound installed on dns-primary
+- [x] Unbound installed on dns-secondary
 - [x] Pi-hole on both nodes using local Unbound
 - [x] DNS resolution works locally on both nodes
 - [x] DNS resolution works through the VIP

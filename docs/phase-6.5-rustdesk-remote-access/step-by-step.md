@@ -50,9 +50,9 @@
 
 ## Step 8: Rename Docker Monitoring VM
 
-![Proxmox VM renamed docker-monitoring](../../screenshots-redacted/phase-6.5/01-proxmox-vm-renamed-docker-monitoring.png)
+[Proxmox VM renamed metrics-host](../../screenshots-redacted/phase-6.5/)
 
-![Ubuntu hostname renamed docker-monitoring](../../screenshots-redacted/phase-6.5/02-ubuntu-hostname-renamed-docker-monitoring.png)
+[Ubuntu hostname renamed metrics-host](../../screenshots-redacted/phase-6.5/)
 
 ## Step 9: Validate Monitoring Before Maintenance
 

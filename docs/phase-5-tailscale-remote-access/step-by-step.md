@@ -102,13 +102,13 @@ A second Windows device was added as another admin endpoint.
 
 ---
 
-## 4. Install Tailscale on ashpi-1 📡
+## 4. Install Tailscale on dns-primary 📡
 
-Tailscale was installed on `ashpi-1`.
+Tailscale was installed on `dns-primary`.
 
 ### Tasks completed
 
-1. SSH’d locally into `ashpi-1`
+1. SSH’d locally into `dns-primary`
 2. installed Tailscale using the Linux install script
 3. ran `sudo tailscale up`
 4. authenticated the device through the Tailscale login link
@@ -124,26 +124,26 @@ hostname
 
 ### Validation
 
-- `ashpi-1` joined the tailnet successfully
-- `ashpi-1` received a Tailscale IP address
-- `ashpi-1` appeared in `tailscale status`
-- `ashpi-1` appeared in the admin console
+- `dns-primary` joined the tailnet successfully
+- `dns-primary` received a Tailscale IP address
+- `dns-primary` appeared in `tailscale status`
+- `dns-primary` appeared in the admin console
 
-![Tailscale installation started on ashpi-1](../../screenshots-redacted/phase-5/05-ashpi-1-tailscale-install-started.png)
+[Tailscale installation started on dns-primary](../../screenshots-redacted/phase-5/)
 
-![ashpi-1 authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/06-ashpi-1-tailscale-authenticated-status.png)
+[dns-primary authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/)
 
-![ashpi-1 visible in Tailscale admin console](../../screenshots-redacted/phase-5/07-ashpi-1-visible-in-admin-console.png)
+[dns-primary visible in Tailscale admin console](../../screenshots-redacted/phase-5/)
 
 ---
 
-## 5. Install Tailscale on ashpi-2 📡
+## 5. Install Tailscale on dns-secondary 📡
 
-The same Tailscale process was repeated on `ashpi-2`.
+The same Tailscale process was repeated on `dns-secondary`.
 
 ### Tasks completed
 
-1. SSH’d locally into `ashpi-2`
+1. SSH’d locally into `dns-secondary`
 2. installed Tailscale using the Linux install script
 3. ran `sudo tailscale up`
 4. authenticated the device through the Tailscale login link
@@ -159,14 +159,14 @@ hostname
 
 ### Validation
 
-- `ashpi-2` joined the tailnet successfully
-- `ashpi-2` received a Tailscale IP address
-- `ashpi-2` appeared in `tailscale status`
-- `ashpi-2` appeared in the admin console
+- `dns-secondary` joined the tailnet successfully
+- `dns-secondary` received a Tailscale IP address
+- `dns-secondary` appeared in `tailscale status`
+- `dns-secondary` appeared in the admin console
 
-![Tailscale installation and authentication on ashpi-2](../../screenshots-redacted/phase-5/08-ashpi-2-tailscale-install-authenticated.png)
+[Tailscale installation and authentication on dns-secondary](../../screenshots-redacted/phase-5/)
 
-![ashpi-2 authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/09-ashpi-2-tailscale-status.png)
+[dns-secondary authenticated and visible in Tailscale status](../../screenshots-redacted/phase-5/)
 
 ---
 
@@ -178,8 +178,8 @@ After both Raspberry Pi nodes were added, the Tailscale admin console showed the
 
 - Windows desktop
 - second Windows admin device
-- `ashpi-1`
-- `ashpi-2`
+- `dns-primary`
+- `dns-secondary`
 
 ### Validation
 
@@ -197,13 +197,13 @@ Tailscale SSH was enabled on both Raspberry Pi nodes.
 
 ### Commands used
 
-On `ashpi-1`:
+On `dns-primary`:
 
 ```bash
 sudo tailscale set --ssh
 ```
 
-On `ashpi-2`:
+On `dns-secondary`:
 
 ```bash
 sudo tailscale set --ssh
@@ -211,13 +211,13 @@ sudo tailscale set --ssh
 
 ### Validation
 
-- command completed successfully on `ashpi-1`
-- command completed successfully on `ashpi-2`
+- command completed successfully on `dns-primary`
+- command completed successfully on `dns-secondary`
 - both nodes were prepared for SSH access through the tailnet
 
-![Tailscale SSH enabled on ashpi-1](../../screenshots-redacted/phase-5/11-ashpi-1-tailscale-ssh-enabled.png)
+[Tailscale SSH enabled on dns-primary](../../screenshots-redacted/phase-5/)
 
-![Tailscale SSH enabled on ashpi-2](../../screenshots-redacted/phase-5/12-ashpi-2-tailscale-ssh-enabled.png)
+[Tailscale SSH enabled on dns-secondary](../../screenshots-redacted/phase-5/)
 
 ---
 
@@ -233,14 +233,14 @@ sudo systemctl status ssh
 
 ### Validation
 
-- SSH service was enabled on `ashpi-1`
-- SSH service was active and running on `ashpi-1`
-- SSH service was enabled on `ashpi-2`
-- SSH service was active and running on `ashpi-2`
+- SSH service was enabled on `dns-primary`
+- SSH service was active and running on `dns-primary`
+- SSH service was enabled on `dns-secondary`
+- SSH service was active and running on `dns-secondary`
 
-![SSH service active on ashpi-1](../../screenshots-redacted/phase-5/13-ashpi-1-ssh-service-active.png)
+[SSH service active on dns-primary](../../screenshots-redacted/phase-5/)
 
-![SSH service active on ashpi-2](../../screenshots-redacted/phase-5/14-ashpi-2-ssh-service-active.png)
+[SSH service active on dns-secondary](../../screenshots-redacted/phase-5/)
 
 ---
 
@@ -251,8 +251,8 @@ Basic connectivity was tested from the admin endpoint.
 ### Validation commands
 
 ```bash
-tailscale ping ashpi-1
-tailscale ping ashpi-2
+tailscale ping dns-primary
+tailscale ping dns-secondary
 ```
 
 ### Implementation note
