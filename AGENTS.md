@@ -10,7 +10,9 @@ Read these first:
 
 ## Scope
 
-Project 1 foundation: HA DNS (Pi-hole + Keepalived VIP), recursive DNS (Unbound), monitoring/alerting (Grafana + Prometheus), Tailscale + RustDesk remote access, Proxmox-hosted core services. Stops intentionally at this foundation. Managed routing/switching, VLAN segmentation, firewall policy, and SSID-to-VLAN mapping are tracked in `netlab`, not here.
+Project 1 foundation: HA DNS (Pi-hole + Keepalived VIP), recursive DNS (Unbound), monitoring/alerting (Grafana + Prometheus), Tailscale + RustDesk remote access, Proxmox-hosted core services. Stops intentionally at this foundation.
+
+Forgejo is the primary Git host; GitHub is a push mirror, and CI runs only on GitHub mirror push events.
 
 ## Directories
 
@@ -18,7 +20,7 @@ Project 1 foundation: HA DNS (Pi-hole + Keepalived VIP), recursive DNS (Unbound)
 
 ## Rules
 
-- This repo is complete/closed out. Do not resume active build-out here; new network work belongs in the managed-infrastructure-lab or VLAN-segmentation follow-up repos.
+- This repo is complete/closed out. Do not resume active build-out here; follow-up managed routing, switching, VLAN, firewall, and SSID work belongs in [netlab](https://github.com/stayZ3RO/netlab).
 - Do not commit unless explicitly instructed.
 - Do not modify infrastructure from this repo. It's documentation/portfolio, not a live control surface.
 - Public-safe repo: never introduce secrets, tokens, private keys, or non-public-safe IPs/hostnames.
