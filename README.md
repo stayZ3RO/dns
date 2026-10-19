@@ -43,7 +43,7 @@ The completed scope includes centralized DNS, Pi-hole high availability, Unbound
 ## Project Highlights ⭐
 
 - Built a dual-node Pi-hole HA DNS design using **Keepalived** and a shared DNS VIP.
-- Used **Gravity Sync** to replicate Pi-hole configuration between Raspberry Pi nodes.
+- Used **Gravity Sync** on the original Pi nodes. **Nebula Sync** is what replicates the Pi-hole pair now.
 - Added **Unbound** for local recursive DNS resolution.
 - Deployed **Prometheus**, **Grafana**, **Alertmanager**, **Blackbox Exporter**, and **Node Exporter** for monitoring and alerting.
 - Implemented secure administration with **Tailscale** without exposing SSH publicly.
@@ -98,12 +98,12 @@ The completed lab provides a documented home infrastructure foundation with high
 | Phase 1 | ✅ Complete | Network control and baseline topology |
 | Phase 1.5 | ✅ Complete | Xfinity to AT&T Fiber migration |
 | Phase 2 | ✅ Complete | Pi-hole DNS control |
-| Phase 3 | ✅ Complete | HA DNS with Keepalived, Gravity Sync, and Unbound |
+| Phase 3 | ✅ Complete | HA DNS with Keepalived and Unbound. Nebula Sync replaced Gravity Sync. |
 | Phase 4 | ✅ Complete | Monitoring and alerting |
 | Phase 5 | ✅ Complete | Tailscale secure remote access |
 | Phase 5.5 | ✅ Complete | Tailscale subnet router and remote LAN access: dedicated subnet router VM advertising `192.0.2.0/24` into Tailscale |
-| Phase 6 | ✅ Complete | Proxmox, Omada Controller, and Docker monitoring migration |
-| Phase 6.5 | ✅ Complete | Remote access, VM hardening, and Docker visibility: RustDesk VM, hardened access, Portainer Server, and Docker visibility |
+| Phase 6 | ✅ Complete | Proxmox and Docker monitoring migration. The Omada controller from this phase is historical. |
+| Phase 6.5 | ✅ Complete | RustDesk VM and hardened access. Portainer was the first Docker manager and is no longer current. It has not been removed. |
 ---
 
 ## Phase Documentation 📚
@@ -116,7 +116,7 @@ The completed lab provides a documented home infrastructure foundation with high
 | Phase 3 | High Availability DNS | [docs/phase-3-ha-dns](docs/phase-3-ha-dns/) |
 | Phase 4 | Monitoring & Alerting | [docs/phase-4-monitoring-alerting](docs/phase-4-monitoring-alerting/) |
 | Phase 5 | Tailscale Remote Access | [docs/phase-5-tailscale-remote-access](docs/phase-5-tailscale-remote-access/) |
-| Phase 6 | Proxmox, Omada & Docker Monitoring Foundation | [docs/phase-6-proxmox-omada-foundation](docs/phase-6-proxmox-omada-foundation/) |
+| Phase 6 | Proxmox and Docker monitoring. Omada controller is historical. | [docs/phase-6-proxmox-omada-foundation](docs/phase-6-proxmox-omada-foundation/) |
 | Phase 6.5 | RustDesk Remote Access & VM Hardening | [docs/phase-6.5-rustdesk-remote-access](docs/phase-6.5-rustdesk-remote-access/) |
 
 ---
@@ -142,7 +142,7 @@ The completed lab provides a documented home infrastructure foundation with high
 | Tool / Service | Purpose |
 |---|---|
 | Pi-hole | DNS filtering and query visibility |
-| Gravity Sync | Pi-hole configuration replication |
+| Nebula Sync | Pi-hole configuration replication. Gravity Sync is retired. |
 | Keepalived | HA DNS virtual IP failover |
 | Unbound | Local recursive DNS resolution |
 | Prometheus | Metrics collection |
@@ -155,7 +155,7 @@ The completed lab provides a documented home infrastructure foundation with high
 | Proxmox | Virtualization platform |
 | Docker Compose | Container deployment |
 | RustDesk | Self-hosted remote access |
-| Portainer Agent | Centralized Docker management endpoint preparation |
+| Portainer | Former Docker manager. Not current, and not deleted yet. |
 
 ---
 
@@ -165,7 +165,7 @@ The completed lab provides a documented home infrastructure foundation with high
 |---|---|
 | DNS Control | Clients used Pi-hole for DNS resolution |
 | HA DNS | VIP remained available during failover testing |
-| Gravity Sync | Pi-hole configuration replicated across nodes |
+| Nebula Sync | Pi-hole configuration replication in use now. Gravity Sync is retired. |
 | Unbound | Local recursive DNS worked on both Pi-hole nodes |
 | Monitoring | Prometheus targets and Grafana dashboards loaded correctly |
 | Alerting | Alertmanager sent Discord notifications |
@@ -180,7 +180,7 @@ The completed lab provides a documented home infrastructure foundation with high
 
 The lab covers practical infrastructure engineering across:
 
-- High availability DNS with Pi-hole, Keepalived, and Gravity Sync
+- High availability DNS with Pi-hole, Keepalived, and Nebula Sync
 - Local recursive DNS resolution with Unbound
 - Monitoring and observability with Prometheus, Grafana, Node Exporter, and Blackbox Exporter
 - Alert routing through Alertmanager and Discord notifications
@@ -196,7 +196,7 @@ The lab covers practical infrastructure engineering across:
 - No public SSH port forwarding is used.
 - Tailscale provides private administrative access.
 - RustDesk is kept LAN-only for this project.
-- Portainer Agent is kept LAN-only.
+- Portainer is no longer the current Docker manager. It has not been deleted, and it stays off the public internet.
 - Monitoring services are kept LAN-only.
 - Discord webhook secrets are stored locally and excluded from Git.
 - Config examples use placeholders where sensitive values would normally exist.
@@ -227,7 +227,7 @@ The lab covers practical infrastructure engineering across:
 
 Routing, switching, VLAN, and firewall policy work is out of scope for this repository and is documented separately as a network segmentation project.
 
-That follow-up project covers managed routing and switching (ER605 and Omada at first, UniFi since 2026-09-27), Deco AP mode, VLAN segmentation, firewall policy, and network isolation.
+That follow-up project covers managed routing and switching (ER605 and Omada at first, UniFi since 2026-09-27). The Omada controller is historical and is not part of the current network. Deco nodes stay in AP mode. VLAN segmentation, firewall policy, and network isolation are still planned.
 
 ---
 
