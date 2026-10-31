@@ -176,6 +176,19 @@ The completed lab provides a documented home infrastructure foundation with high
 
 ---
 
+## Repository Checks
+
+Run these from the repo root before opening a PR:
+
+```bash
+python3 scripts/check-public-safety.py
+python3 scripts/check-relative-links.py
+```
+
+The first fails on unapproved MAC addresses, real network addresses and known internal machine names in tracked text, and reminds you to review every image by eye. The second fails on broken relative Markdown links. The Forgejo `validate` workflow runs both on push, plus a gitleaks secret scan.
+
+---
+
 ## Project Highlights
 
 The lab covers practical infrastructure engineering across:

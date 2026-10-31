@@ -12,7 +12,9 @@ Read these first:
 
 Project 1 foundation: HA DNS (Pi-hole + Keepalived VIP), recursive DNS (Unbound), monitoring/alerting (Grafana + Prometheus), Tailscale + RustDesk remote access, Proxmox-hosted core services. Stops intentionally at this foundation.
 
-Forgejo is the primary Git host; GitHub is a push mirror, and CI runs only on GitHub mirror push events.
+The repository is public (Forgejo primary, public GitHub mirror).
+
+Forgejo is the primary Git host; GitHub is a push mirror. CI runs on Forgejo on push (`.forgejo/workflows/validate.yml`).
 
 ## Directories
 
