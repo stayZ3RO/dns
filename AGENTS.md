@@ -2,7 +2,7 @@
 
 Read these first:
 
-1. `CURRENT-STATUS.md` for project state (this repo is **complete/closed out**, Project 1 of the home network lab)
+1. `phase-state.md` for project state (this repo is **complete/closed out**, Project 1 of the home network lab)
 2. `ROADMAP.md`
 3. `LESSONS-LEARNED.md`
 4. `CHANGELOG.md`
