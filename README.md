@@ -18,7 +18,7 @@ This repository intentionally stops at the **core infrastructure foundation** st
 
 | Area | Link |
 |---|---|
-| Current Status | [CURRENT-STATUS.md](CURRENT-STATUS.md) |
+| Current Status | [phase-state.md](phase-state.md) |
 | Roadmap | [ROADMAP.md](ROADMAP.md) |
 | Lessons Learned | [LESSONS-LEARNED.md](LESSONS-LEARNED.md) |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) |
