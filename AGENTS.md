@@ -14,7 +14,7 @@ Project 1 foundation: HA DNS (Pi-hole + Keepalived VIP), recursive DNS (Unbound)
 
 The repository is public (Forgejo primary, public GitHub mirror).
 
-Forgejo is the primary Git host; GitHub is a push mirror. CI runs on Forgejo on push (`.forgejo/workflows/validate.yml`).
+Forgejo is the primary Git host; GitHub is a push mirror. CI runs on Forgejo on push (`.forgejo/workflows/validate.yml`). The GitHub mirror also runs `.github/workflows/docs-check.yml` on push to main and `.github/workflows/gitleaks.yml` on every push.
 
 ## Directories
 

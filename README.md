@@ -186,7 +186,7 @@ python3 scripts/check-public-safety.py
 python3 scripts/check-relative-links.py
 ```
 
-The first fails on unapproved MAC addresses, real network addresses and known internal machine names in tracked text, and reminds you to review every image by eye. The second fails on broken relative Markdown links. The Forgejo `validate` workflow runs both on push, plus a gitleaks secret scan.
+The first fails on unapproved MAC addresses, real network addresses and known internal machine names in tracked text, and reminds you to review every image by eye. The second fails on broken relative Markdown links. The Forgejo `validate` workflow runs both on push, plus a gitleaks secret scan. The GitHub mirror also runs a docs check on push to main and a gitleaks scan on every push.
 
 ---
 
