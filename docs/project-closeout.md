@@ -13,20 +13,20 @@ It documents a resilient foundation for DNS, monitoring, alerting, secure remote
 - Network baseline and ISP migration documentation
 - Pi-hole DNS filtering and query visibility
 - Dual-node HA DNS with Keepalived VIP failover
-- Gravity Sync replication between Pi-hole nodes
+- Gravity Sync replication between Pi-hole nodes (historical, replaced by Nebula Sync)
 - Local recursive DNS with Unbound
 - Prometheus and Grafana monitoring
 - Alertmanager alert routing
 - Discord alert delivery
 - Tailscale secure remote administration
 - Proxmox infrastructure host
-- Omada Controller LXC
+- Omada Controller LXC (historical, retired)
 - Docker monitoring VM
 - Monitoring migration from gaming PC to Linux VM
 - RustDesk self-hosted remote access
 - Docker log rotation
 - Prometheus retention controls
-- Portainer Agent preparation
+- Portainer Agent preparation (no longer current)
 - Proxmox backup validation
 
 ---
