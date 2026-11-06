@@ -18,7 +18,7 @@ Forgejo is the primary Git host; GitHub is a push mirror. CI runs on Forgejo on 
 
 ## Directories
 
-`audit/`, `configs/`, `diagrams/`, `docs/`, `screenshots/`, `scripts/`
+`audit/`, `configs/`, `diagrams/`, `docs/`, `screenshots/`, `screenshots-redacted/`, `scripts/`
 
 ## Rules
 
