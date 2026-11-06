@@ -66,7 +66,7 @@ Home LAN
 - The gateway reservation UI is not included in this Project 1 documentation because that belongs to the later managed-router cutover state.
 - Project 1 documents the Proxmox virtual NIC MAC source and Debian DHCP lease validation instead.
 - Only the flat LAN subnet `192.0.2.0/24` is advertised.
-- VLAN-aware remote access will be handled later in Project 2.
+- VLAN-aware remote access will be handled later in [netlab](https://github.com/stayZ3RO/netlab).
 
 ## Documentation
 
