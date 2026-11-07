@@ -23,11 +23,13 @@
 
 ## Image Issues
 
-- `screenshots/phase-6/05-er605-address-reservations.jpeg`, could not read basic image dimensions
+The three moved image paths below now point to their redacted copies. The findings describe the original audit, before those copies were redacted.
+
+- `screenshots-redacted/phase-6/05-er605-address-reservations.jpeg`, could not read basic image dimensions
 - `screenshots/phase-6/06-er605-lan-dhcp-pihole-dns.jpeg`, could not read basic image dimensions
 - `screenshots/phase-6/03-proxmox-node-summary.jpeg`, could not read basic image dimensions
-- `screenshots/phase-6/02-proxmox-storage-layout-before-hdd.jpeg`, could not read basic image dimensions
-- `screenshots/phase-6/01-omada-lxc-package-install.jpeg`, could not read basic image dimensions
+- `screenshots-redacted/phase-6/02-proxmox-storage-layout-before-hdd.jpeg`, could not read basic image dimensions
+- `screenshots-redacted/phase-6/01-omada-lxc-package-install.jpeg`, could not read basic image dimensions
 
 ## Likely Blank Screenshots
 
