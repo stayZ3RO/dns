@@ -159,7 +159,7 @@ Example image references:
 
 ![Unbound dns-primary status](../../screenshots-redacted/phase-3/20-unbound-active-on-pi1.png)
 ![Unbound dns-secondary status](../../screenshots-redacted/phase-3/24-pi2-unbound-active.png)
-![Unbound dns-primary dig test](../../screenshots-redacted/phase-3/21-dns-recursion-validation-pi1.png)
+![Unbound dns-primary dig test](../../screenshots-redacted/phase-3/21-dns-unbound-dig-test-before-pihole-dns-update.png)
 ![Unbound dns-secondary dig test](../../screenshots-redacted/phase-3/27-pi2-dig-test-after-dns-update.png)
 
 ---
