@@ -18,15 +18,15 @@ This is the Project 1 closeout record. The follow-up [netlab project](https://gi
 | ISP migration documentation | Complete |
 | Pi-hole DNS control | Complete |
 | HA DNS with Keepalived VIP | Complete |
-| Gravity Sync replication | Complete |
+| Gravity Sync replication | Complete (historical), replaced by Nebula Sync |
 | Unbound recursive DNS | Complete |
 | Monitoring with Prometheus and Grafana | Complete |
 | Alerting with Alertmanager and Discord | Complete |
 | Secure remote access with Tailscale | Complete |
 | Proxmox infrastructure host | Complete |
-| Omada Controller LXC | Complete |
+| Omada Controller LXC | Complete (historical), retired |
 | Docker monitoring VM | Complete |
-| Portainer Agent on monitoring VM | Complete |
+| Portainer Agent on monitoring VM | Complete (historical), no longer current |
 | RustDesk self-hosted remote access | Complete |
 | VM hardening and backup validation | Complete |
 

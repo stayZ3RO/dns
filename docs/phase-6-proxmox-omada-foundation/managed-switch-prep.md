@@ -161,3 +161,5 @@ The final switch management IP of `192.0.2.2` will be assigned after the ER605 b
 The follow-up managed network project moves the ER605 into the live network path, makes the managed switch the core switch, and places the Deco mesh into AP mode.
 
 VLAN segmentation is deferred to the separate managed network project.
+
+Historical note: the ER605 cutover was completed in the follow-up [netlab project](https://github.com/stayZ3RO/netlab), and the router and switch were later replaced by a UniFi UDM Pro and USW-24-PoE on 2026-09-27.

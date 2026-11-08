@@ -1,6 +1,6 @@
 # Screenshots 📸
 
-The published validation screenshots are in [screenshots-redacted/](../screenshots-redacted/). This folder also retains seven Phase 6 JPEGs from the original project record.
+The published validation screenshots are in [screenshots-redacted/](../screenshots-redacted/). This folder also retains six Phase 6 JPEGs from the original project record.
 
 Screenshots are included to show that each phase was configured, tested, and verified.
 

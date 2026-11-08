@@ -116,6 +116,7 @@ The completed lab provides a documented home infrastructure foundation with high
 | Phase 3 | High Availability DNS | [docs/phase-3-ha-dns](docs/phase-3-ha-dns/) |
 | Phase 4 | Monitoring & Alerting | [docs/phase-4-monitoring-alerting](docs/phase-4-monitoring-alerting/) |
 | Phase 5 | Tailscale Remote Access | [docs/phase-5-tailscale-remote-access](docs/phase-5-tailscale-remote-access/) |
+| Phase 5.5 | Tailscale Subnet Router | [docs/phase-5.5-tailscale-subnet-router](docs/phase-5.5-tailscale-subnet-router/) |
 | Phase 6 | Proxmox and Docker monitoring. Omada controller is historical. | [docs/phase-6-proxmox-omada-foundation](docs/phase-6-proxmox-omada-foundation/) |
 | Phase 6.5 | RustDesk Remote Access & VM Hardening | [docs/phase-6.5-rustdesk-remote-access](docs/phase-6.5-rustdesk-remote-access/) |
 
@@ -185,7 +186,7 @@ python3 scripts/check-public-safety.py
 python3 scripts/check-relative-links.py
 ```
 
-The first fails on unapproved MAC addresses, real network addresses and known internal machine names in tracked text, and reminds you to review every image by eye. The second fails on broken relative Markdown links. The Forgejo `validate` workflow runs both on push, plus a gitleaks secret scan.
+The first fails on unapproved MAC addresses, real network addresses and known internal machine names in tracked text, and reminds you to review every image by eye. The second fails on broken relative Markdown links. The Forgejo `validate` workflow runs both on push, plus a gitleaks secret scan. The GitHub mirror also runs a docs check on push to main and a gitleaks scan on every push.
 
 ---
 
