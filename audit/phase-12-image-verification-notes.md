@@ -8,10 +8,12 @@ These files were manually reviewed with file type checks and visual opening from
 
 ## Reviewed Files
 
-- `screenshots/phase-6/01-omada-lxc-package-install.jpeg`
-- `screenshots/phase-6/02-proxmox-storage-layout-before-hdd.jpeg`
+The three moved image paths below now point to their redacted copies. The findings describe the original audit, before those copies were redacted.
+
+- `screenshots-redacted/phase-6/01-omada-lxc-package-install.jpeg`
+- `screenshots-redacted/phase-6/02-proxmox-storage-layout-before-hdd.jpeg`
 - `screenshots/phase-6/03-proxmox-node-summary.jpeg`
-- `screenshots/phase-6/05-er605-address-reservations.jpeg`
+- `screenshots-redacted/phase-6/05-er605-address-reservations.jpeg`
 - `screenshots/phase-6/06-er605-lan-dhcp-pihole-dns.jpeg`
 
 ## Result

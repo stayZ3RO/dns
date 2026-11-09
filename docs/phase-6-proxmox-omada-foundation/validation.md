@@ -35,7 +35,7 @@ Result: Omada Controller is running from the Proxmox LXC.
 
 ## 3. ER605 Preconfiguration Validation
 
-![ER605 address reservations](../../screenshots/phase-6/05-er605-address-reservations.jpeg)
+![ER605 address reservations](../../screenshots-redacted/phase-6/05-er605-address-reservations.jpeg)
 
 (The matching LAN/DHCP settings screenshot was removed: its summary
 table row showed the gateway IP unredacted, unlike the detail fields

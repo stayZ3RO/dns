@@ -200,11 +200,7 @@ Unbound was installed on the primary Pi-hole node to provide local recursive DNS
 
 ![DNS Unbound dig test before Pi-hole DNS update](../../screenshots-redacted/phase-3/21-dns-unbound-dig-test-before-pihole-dns-update.png)
 
-![DNS recursion validation pi1](../../screenshots-redacted/phase-3/21-dns-recursion-validation-pi1.png)
-
 ![Pi 1 Pi-hole DNS](../../screenshots-redacted/phase-3/22-pi1-pihole-dns.png)
-
-![Unbound validation pi1](../../screenshots-redacted/phase-3/23-unbound-validation-pi1.png)
 
 ![DNS dig validation after Pi-hole DNS](../../screenshots-redacted/phase-3/23-dns-dig-validation-after-pihole-dns.png)
 

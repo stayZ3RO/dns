@@ -16,7 +16,7 @@ Validation:
 
 Validated active VM/LXC storage and backup storage.
 
-![Proxmox storage layout before HDD](../../screenshots/phase-6/02-proxmox-storage-layout-before-hdd.jpeg)
+![Proxmox storage layout before HDD](../../screenshots-redacted/phase-6/02-proxmox-storage-layout-before-hdd.jpeg)
 
 ---
 
@@ -27,7 +27,7 @@ Created an LXC container for Omada Controller.
 - Controller IP: `192.0.2.10`
 - URL: `https://192.0.2.10:8043`
 
-![Omada LXC package installation](../../screenshots/phase-6/01-omada-lxc-package-install.jpeg)
+![Omada LXC package installation](../../screenshots-redacted/phase-6/01-omada-lxc-package-install.jpeg)
 
 [Omada Controller dashboard](../../screenshots/phase-6/)
 
@@ -43,7 +43,7 @@ Configured the ER605 for the existing LAN plan.
 | DHCP Range | `192.0.2.100-192.0.2.200` |
 | Primary DNS | `192.0.2.20` |
 
-![ER605 address reservations](../../screenshots/phase-6/05-er605-address-reservations.jpeg)
+![ER605 address reservations](../../screenshots-redacted/phase-6/05-er605-address-reservations.jpeg)
 
 (The matching LAN/DHCP settings screenshot was removed: its summary
 table row showed the gateway IP unredacted, unlike the detail fields
