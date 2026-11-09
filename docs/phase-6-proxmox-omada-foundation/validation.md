@@ -19,7 +19,7 @@
 
 ## 1. Proxmox Host Validation
 
-![Proxmox node summary](../../screenshots-redacted/phase-6/03-proxmox-node-summary.jpeg)
+![Proxmox node summary](../../screenshots/phase-6/03-proxmox-node-summary.jpeg)
 
 Result: Proxmox host is online and hosting lab services.
 

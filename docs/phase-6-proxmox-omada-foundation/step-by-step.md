@@ -8,7 +8,7 @@ Installed Proxmox on the Dell OptiPlex and assigned it the management IP:
 
 Validation:
 
-![Proxmox node summary](../../screenshots-redacted/phase-6/03-proxmox-node-summary.jpeg)
+![Proxmox node summary](../../screenshots/phase-6/03-proxmox-node-summary.jpeg)
 
 ---
 
